@@ -1,0 +1,1729 @@
+{
+  "source": "Unity Version Control / Plastic SCM",
+  "exportedAt": "2026-10-03T08:22:41.6475799+00:00",
+  "redactions": [
+    "Account email",
+    "Organization and server identifiers",
+    "Absolute workspace paths",
+    "Authentication configuration"
+  ],
+  "note": "Genuine changeset metadata, not historical Git commits or a full source-revision export",
+  "changesets": [
+    {
+      "changeset": 0,
+      "date": "2026-08-17T13:50:26+08:00",
+      "branch": "/main",
+      "comment": "",
+      "changedItems": []
+    },
+    {
+      "changeset": 1,
+      "date": "2026-10-03T13:27:25+08:00",
+      "branch": "/main",
+      "comment": "Checkpoint: lived-in multi-room home demo with local and DeepSeek planning, shared-wall doors and windows, furniture editing, layout scoring, camera pan and regression diagnostics. See CHANGELOG.md for validation and known limitations.",
+      "changedItems": [
+        {
+          "type": "Added",
+          "path": "/Assets",
+          "previousPath": "/Assets"
+        },
+        {
+          "type": "Added",
+          "path": "/ProjectSettings",
+          "previousPath": "/ProjectSettings"
+        },
+        {
+          "type": "Added",
+          "path": "/.gitignore",
+          "previousPath": "/.gitignore"
+        },
+        {
+          "type": "Added",
+          "path": "/.vsconfig",
+          "previousPath": "/.vsconfig"
+        },
+        {
+          "type": "Added",
+          "path": "/CHANGELOG.md",
+          "previousPath": "/CHANGELOG.md"
+        },
+        {
+          "type": "Added",
+          "path": "/CODE_REVIEW.md",
+          "previousPath": "/CODE_REVIEW.md"
+        },
+        {
+          "type": "Added",
+          "path": "/ignore.conf",
+          "previousPath": "/ignore.conf"
+        },
+        {
+          "type": "Added",
+          "path": "/Packages",
+          "previousPath": "/Packages"
+        },
+        {
+          "type": "Added",
+          "path": "/PORTFOLIO.md",
+          "previousPath": "/PORTFOLIO.md"
+        },
+        {
+          "type": "Added",
+          "path": "/README.md",
+          "previousPath": "/README.md"
+        },
+        {
+          "type": "Added",
+          "path": "/SCENESMITH_PARITY.md",
+          "previousPath": "/SCENESMITH_PARITY.md"
+        },
+        {
+          "type": "Added",
+          "path": "/THIRD_PARTY_NOTICES.md",
+          "previousPath": "/THIRD_PARTY_NOTICES.md"
+        },
+        {
+          "type": "Added",
+          "path": "/Tools",
+          "previousPath": "/Tools"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/UniversalRenderPipelineGlobalSettings.asset",
+          "previousPath": "/Assets/UniversalRenderPipelineGlobalSettings.asset"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/UniversalRenderPipelineGlobalSettings.asset.meta",
+          "previousPath": "/Assets/UniversalRenderPipelineGlobalSettings.asset.meta"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/Settings",
+          "previousPath": "/Assets/Settings"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/Settings/URP-HighFidelity.asset",
+          "previousPath": "/Assets/Settings/URP-HighFidelity.asset"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/Settings/URP-HighFidelity.asset.meta",
+          "previousPath": "/Assets/Settings/URP-HighFidelity.asset.meta"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/Settings/URP-HighFidelity-Renderer.asset",
+          "previousPath": "/Assets/Settings/URP-HighFidelity-Renderer.asset"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/Settings/URP-HighFidelity-Renderer.asset.meta",
+          "previousPath": "/Assets/Settings/URP-HighFidelity-Renderer.asset.meta"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/Settings/SampleSceneProfile.asset",
+          "previousPath": "/Assets/Settings/SampleSceneProfile.asset"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/Settings/SampleSceneProfile.asset.meta",
+          "previousPath": "/Assets/Settings/SampleSceneProfile.asset.meta"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/Settings/URP-Balanced-Renderer.asset",
+          "previousPath": "/Assets/Settings/URP-Balanced-Renderer.asset"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/Settings/URP-Balanced-Renderer.asset.meta",
+          "previousPath": "/Assets/Settings/URP-Balanced-Renderer.asset.meta"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/Settings/URP-Balanced.asset",
+          "previousPath": "/Assets/Settings/URP-Balanced.asset"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/Settings/URP-Balanced.asset.meta",
+          "previousPath": "/Assets/Settings/URP-Balanced.asset.meta"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/Settings/URP-Performant-Renderer.asset",
+          "previousPath": "/Assets/Settings/URP-Performant-Renderer.asset"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/Settings/URP-Performant-Renderer.asset.meta",
+          "previousPath": "/Assets/Settings/URP-Performant-Renderer.asset.meta"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/Settings/URP-Performant.asset",
+          "previousPath": "/Assets/Settings/URP-Performant.asset"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/Settings/URP-Performant.asset.meta",
+          "previousPath": "/Assets/Settings/URP-Performant.asset.meta"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI",
+          "previousPath": "/Assets/SceneCraftAI"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Art",
+          "previousPath": "/Assets/SceneCraftAI/Art"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Art/Prefabs",
+          "previousPath": "/Assets/SceneCraftAI/Art/Prefabs"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Art/Prefabs/KenneyFurnitureKit",
+          "previousPath": "/Assets/SceneCraftAI/Art/Prefabs/KenneyFurnitureKit"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Art/Prefabs/KenneyFurnitureKit/bedDouble.prefab",
+          "previousPath": "/Assets/SceneCraftAI/Art/Prefabs/KenneyFurnitureKit/bedDouble.prefab"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Art/Prefabs/KenneyFurnitureKit/bedDouble.prefab.meta",
+          "previousPath": "/Assets/SceneCraftAI/Art/Prefabs/KenneyFurnitureKit/bedDouble.prefab.meta"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Art/Prefabs/KenneyFurnitureKit/bedSingle.prefab",
+          "previousPath": "/Assets/SceneCraftAI/Art/Prefabs/KenneyFurnitureKit/bedSingle.prefab"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Art/Prefabs/KenneyFurnitureKit/bedSingle.prefab.meta",
+          "previousPath": "/Assets/SceneCraftAI/Art/Prefabs/KenneyFurnitureKit/bedSingle.prefab.meta"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Art/Prefabs/KenneyFurnitureKit/bookcaseClosedWide.prefab",
+          "previousPath": "/Assets/SceneCraftAI/Art/Prefabs/KenneyFurnitureKit/bookcaseClosedWide.prefab"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Art/Prefabs/KenneyFurnitureKit/bookcaseClosedWide.prefab.meta",
+          "previousPath": "/Assets/SceneCraftAI/Art/Prefabs/KenneyFurnitureKit/bookcaseClosedWide.prefab.meta"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Art/Prefabs/KenneyFurnitureKit/bookcaseOpen.prefab",
+          "previousPath": "/Assets/SceneCraftAI/Art/Prefabs/KenneyFurnitureKit/bookcaseOpen.prefab"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Art/Prefabs/KenneyFurnitureKit/bookcaseOpen.prefab.meta",
+          "previousPath": "/Assets/SceneCraftAI/Art/Prefabs/KenneyFurnitureKit/bookcaseOpen.prefab.meta"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Art/Prefabs/KenneyFurnitureKit/bookcaseOpenLow.prefab",
+          "previousPath": "/Assets/SceneCraftAI/Art/Prefabs/KenneyFurnitureKit/bookcaseOpenLow.prefab"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Art/Prefabs/KenneyFurnitureKit/bookcaseOpenLow.prefab.meta",
+          "previousPath": "/Assets/SceneCraftAI/Art/Prefabs/KenneyFurnitureKit/bookcaseOpenLow.prefab.meta"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Art/Prefabs/KenneyFurnitureKit/cabinetTelevision.prefab",
+          "previousPath": "/Assets/SceneCraftAI/Art/Prefabs/KenneyFurnitureKit/cabinetTelevision.prefab"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Art/Prefabs/KenneyFurnitureKit/cabinetTelevision.prefab.meta",
+          "previousPath": "/Assets/SceneCraftAI/Art/Prefabs/KenneyFurnitureKit/cabinetTelevision.prefab.meta"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Art/Prefabs/KenneyFurnitureKit/cabinetTelevisionDoors.prefab",
+          "previousPath": "/Assets/SceneCraftAI/Art/Prefabs/KenneyFurnitureKit/cabinetTelevisionDoors.prefab"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Art/Prefabs/KenneyFurnitureKit/cabinetTelevisionDoors.prefab.meta",
+          "previousPath": "/Assets/SceneCraftAI/Art/Prefabs/KenneyFurnitureKit/cabinetTelevisionDoors.prefab.meta"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Art/Prefabs/KenneyFurnitureKit/chairCushion.prefab",
+          "previousPath": "/Assets/SceneCraftAI/Art/Prefabs/KenneyFurnitureKit/chairCushion.prefab"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Art/Prefabs/KenneyFurnitureKit/chairCushion.prefab.meta",
+          "previousPath": "/Assets/SceneCraftAI/Art/Prefabs/KenneyFurnitureKit/chairCushion.prefab.meta"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Art/Prefabs/KenneyFurnitureKit/chairModernCushion.prefab",
+          "previousPath": "/Assets/SceneCraftAI/Art/Prefabs/KenneyFurnitureKit/chairModernCushion.prefab"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Art/Prefabs/KenneyFurnitureKit/chairModernCushion.prefab.meta",
+          "previousPath": "/Assets/SceneCraftAI/Art/Prefabs/KenneyFurnitureKit/chairModernCushion.prefab.meta"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Art/Prefabs/KenneyFurnitureKit/chairRounded.prefab",
+          "previousPath": "/Assets/SceneCraftAI/Art/Prefabs/KenneyFurnitureKit/chairRounded.prefab"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Art/Prefabs/KenneyFurnitureKit/chairRounded.prefab.meta",
+          "previousPath": "/Assets/SceneCraftAI/Art/Prefabs/KenneyFurnitureKit/chairRounded.prefab.meta"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Art/Prefabs/KenneyFurnitureKit/desk.prefab",
+          "previousPath": "/Assets/SceneCraftAI/Art/Prefabs/KenneyFurnitureKit/desk.prefab"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Art/Prefabs/KenneyFurnitureKit/desk.prefab.meta",
+          "previousPath": "/Assets/SceneCraftAI/Art/Prefabs/KenneyFurnitureKit/desk.prefab.meta"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Art/Prefabs/KenneyFurnitureKit/deskCorner.prefab",
+          "previousPath": "/Assets/SceneCraftAI/Art/Prefabs/KenneyFurnitureKit/deskCorner.prefab"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Art/Prefabs/KenneyFurnitureKit/deskCorner.prefab.meta",
+          "previousPath": "/Assets/SceneCraftAI/Art/Prefabs/KenneyFurnitureKit/deskCorner.prefab.meta"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Art/Prefabs/KenneyFurnitureKit/loungeDesignSofa.prefab",
+          "previousPath": "/Assets/SceneCraftAI/Art/Prefabs/KenneyFurnitureKit/loungeDesignSofa.prefab"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Art/Prefabs/KenneyFurnitureKit/loungeDesignSofa.prefab.meta",
+          "previousPath": "/Assets/SceneCraftAI/Art/Prefabs/KenneyFurnitureKit/loungeDesignSofa.prefab.meta"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Art/Prefabs/KenneyFurnitureKit/loungeSofa.prefab",
+          "previousPath": "/Assets/SceneCraftAI/Art/Prefabs/KenneyFurnitureKit/loungeSofa.prefab"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Art/Prefabs/KenneyFurnitureKit/loungeSofa.prefab.meta",
+          "previousPath": "/Assets/SceneCraftAI/Art/Prefabs/KenneyFurnitureKit/loungeSofa.prefab.meta"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Art/Prefabs/KenneyFurnitureKit/loungeSofaLong.prefab",
+          "previousPath": "/Assets/SceneCraftAI/Art/Prefabs/KenneyFurnitureKit/loungeSofaLong.prefab"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Art/Prefabs/KenneyFurnitureKit/loungeSofaLong.prefab.meta",
+          "previousPath": "/Assets/SceneCraftAI/Art/Prefabs/KenneyFurnitureKit/loungeSofaLong.prefab.meta"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Art/Prefabs/KenneyFurnitureKit/pottedPlant.prefab",
+          "previousPath": "/Assets/SceneCraftAI/Art/Prefabs/KenneyFurnitureKit/pottedPlant.prefab"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Art/Prefabs/KenneyFurnitureKit/pottedPlant.prefab.meta",
+          "previousPath": "/Assets/SceneCraftAI/Art/Prefabs/KenneyFurnitureKit/pottedPlant.prefab.meta"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Art/Prefabs/KenneyFurnitureKit/sideTable.prefab",
+          "previousPath": "/Assets/SceneCraftAI/Art/Prefabs/KenneyFurnitureKit/sideTable.prefab"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Art/Prefabs/KenneyFurnitureKit/sideTable.prefab.meta",
+          "previousPath": "/Assets/SceneCraftAI/Art/Prefabs/KenneyFurnitureKit/sideTable.prefab.meta"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Art/Prefabs/KenneyFurnitureKit/sideTableDrawers.prefab",
+          "previousPath": "/Assets/SceneCraftAI/Art/Prefabs/KenneyFurnitureKit/sideTableDrawers.prefab"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Art/Prefabs/KenneyFurnitureKit/sideTableDrawers.prefab.meta",
+          "previousPath": "/Assets/SceneCraftAI/Art/Prefabs/KenneyFurnitureKit/sideTableDrawers.prefab.meta"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Art/Prefabs/KenneyFurnitureKit/table.prefab",
+          "previousPath": "/Assets/SceneCraftAI/Art/Prefabs/KenneyFurnitureKit/table.prefab"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Art/Prefabs/KenneyFurnitureKit/table.prefab.meta",
+          "previousPath": "/Assets/SceneCraftAI/Art/Prefabs/KenneyFurnitureKit/table.prefab.meta"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Art/Prefabs/KenneyFurnitureKit/tableCoffee.prefab",
+          "previousPath": "/Assets/SceneCraftAI/Art/Prefabs/KenneyFurnitureKit/tableCoffee.prefab"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Art/Prefabs/KenneyFurnitureKit/tableCoffee.prefab.meta",
+          "previousPath": "/Assets/SceneCraftAI/Art/Prefabs/KenneyFurnitureKit/tableCoffee.prefab.meta"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Art/Prefabs/KenneyFurnitureKit/tableCoffeeGlass.prefab",
+          "previousPath": "/Assets/SceneCraftAI/Art/Prefabs/KenneyFurnitureKit/tableCoffeeGlass.prefab"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Art/Prefabs/KenneyFurnitureKit/tableCoffeeGlass.prefab.meta",
+          "previousPath": "/Assets/SceneCraftAI/Art/Prefabs/KenneyFurnitureKit/tableCoffeeGlass.prefab.meta"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Art/Prefabs/KenneyFurnitureKit/tableCoffeeSquare.prefab",
+          "previousPath": "/Assets/SceneCraftAI/Art/Prefabs/KenneyFurnitureKit/tableCoffeeSquare.prefab"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Art/Prefabs/KenneyFurnitureKit/tableCoffeeSquare.prefab.meta",
+          "previousPath": "/Assets/SceneCraftAI/Art/Prefabs/KenneyFurnitureKit/tableCoffeeSquare.prefab.meta"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Art/Prefabs/KenneyFurnitureKit/tableCross.prefab",
+          "previousPath": "/Assets/SceneCraftAI/Art/Prefabs/KenneyFurnitureKit/tableCross.prefab"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Art/Prefabs/KenneyFurnitureKit/tableCross.prefab.meta",
+          "previousPath": "/Assets/SceneCraftAI/Art/Prefabs/KenneyFurnitureKit/tableCross.prefab.meta"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Art/Prefabs/KenneyFurnitureKit/tableRound.prefab",
+          "previousPath": "/Assets/SceneCraftAI/Art/Prefabs/KenneyFurnitureKit/tableRound.prefab"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Art/Prefabs/KenneyFurnitureKit/tableRound.prefab.meta",
+          "previousPath": "/Assets/SceneCraftAI/Art/Prefabs/KenneyFurnitureKit/tableRound.prefab.meta"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Art/Prefabs/KenneyFurnitureKit/lampRoundFloor.prefab",
+          "previousPath": "/Assets/SceneCraftAI/Art/Prefabs/KenneyFurnitureKit/lampRoundFloor.prefab"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Art/Prefabs/KenneyFurnitureKit/lampRoundFloor.prefab.meta",
+          "previousPath": "/Assets/SceneCraftAI/Art/Prefabs/KenneyFurnitureKit/lampRoundFloor.prefab.meta"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Art/Prefabs/KenneyFurnitureKit/lampSquareFloor.prefab",
+          "previousPath": "/Assets/SceneCraftAI/Art/Prefabs/KenneyFurnitureKit/lampSquareFloor.prefab"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Art/Prefabs/KenneyFurnitureKit/lampSquareFloor.prefab.meta",
+          "previousPath": "/Assets/SceneCraftAI/Art/Prefabs/KenneyFurnitureKit/lampSquareFloor.prefab.meta"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Art/Prefabs/KenneyFurnitureKit/rugRectangle.prefab",
+          "previousPath": "/Assets/SceneCraftAI/Art/Prefabs/KenneyFurnitureKit/rugRectangle.prefab"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Art/Prefabs/KenneyFurnitureKit/rugRectangle.prefab.meta",
+          "previousPath": "/Assets/SceneCraftAI/Art/Prefabs/KenneyFurnitureKit/rugRectangle.prefab.meta"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Art/Prefabs/KenneyFurnitureKit/rugRound.prefab",
+          "previousPath": "/Assets/SceneCraftAI/Art/Prefabs/KenneyFurnitureKit/rugRound.prefab"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Art/Prefabs/KenneyFurnitureKit/rugRound.prefab.meta",
+          "previousPath": "/Assets/SceneCraftAI/Art/Prefabs/KenneyFurnitureKit/rugRound.prefab.meta"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Art/Prefabs/.gitkeep",
+          "previousPath": "/Assets/SceneCraftAI/Art/Prefabs/.gitkeep"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Art/Prefabs/KenneyFurnitureKit.meta",
+          "previousPath": "/Assets/SceneCraftAI/Art/Prefabs/KenneyFurnitureKit.meta"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Art/Licenses",
+          "previousPath": "/Assets/SceneCraftAI/Art/Licenses"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Art/Licenses/.gitkeep",
+          "previousPath": "/Assets/SceneCraftAI/Art/Licenses/.gitkeep"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Art/Licenses/Kenney-Furniture-Kit-License.txt",
+          "previousPath": "/Assets/SceneCraftAI/Art/Licenses/Kenney-Furniture-Kit-License.txt"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Art/Licenses/Kenney-Furniture-Kit-License.txt.meta",
+          "previousPath": "/Assets/SceneCraftAI/Art/Licenses/Kenney-Furniture-Kit-License.txt.meta"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Art/Licenses/Kenney-Furniture-Kit-Source.md",
+          "previousPath": "/Assets/SceneCraftAI/Art/Licenses/Kenney-Furniture-Kit-Source.md"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Art/Licenses/Kenney-Furniture-Kit-Source.md.meta",
+          "previousPath": "/Assets/SceneCraftAI/Art/Licenses/Kenney-Furniture-Kit-Source.md.meta"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Art/Licenses.meta",
+          "previousPath": "/Assets/SceneCraftAI/Art/Licenses.meta"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Art/Materials",
+          "previousPath": "/Assets/SceneCraftAI/Art/Materials"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Art/Materials/.gitkeep",
+          "previousPath": "/Assets/SceneCraftAI/Art/Materials/.gitkeep"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Art/Materials.meta",
+          "previousPath": "/Assets/SceneCraftAI/Art/Materials.meta"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Art/Models",
+          "previousPath": "/Assets/SceneCraftAI/Art/Models"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Art/Models/.gitkeep",
+          "previousPath": "/Assets/SceneCraftAI/Art/Models/.gitkeep"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Art/Models/KenneyFurnitureKit",
+          "previousPath": "/Assets/SceneCraftAI/Art/Models/KenneyFurnitureKit"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Art/Models/KenneyFurnitureKit/bedDouble.fbx",
+          "previousPath": "/Assets/SceneCraftAI/Art/Models/KenneyFurnitureKit/bedDouble.fbx"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Art/Models/KenneyFurnitureKit/bedDouble.fbx.meta",
+          "previousPath": "/Assets/SceneCraftAI/Art/Models/KenneyFurnitureKit/bedDouble.fbx.meta"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Art/Models/KenneyFurnitureKit/bedSingle.fbx",
+          "previousPath": "/Assets/SceneCraftAI/Art/Models/KenneyFurnitureKit/bedSingle.fbx"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Art/Models/KenneyFurnitureKit/bedSingle.fbx.meta",
+          "previousPath": "/Assets/SceneCraftAI/Art/Models/KenneyFurnitureKit/bedSingle.fbx.meta"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Art/Models/KenneyFurnitureKit/bookcaseClosedWide.fbx",
+          "previousPath": "/Assets/SceneCraftAI/Art/Models/KenneyFurnitureKit/bookcaseClosedWide.fbx"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Art/Models/KenneyFurnitureKit/bookcaseClosedWide.fbx.meta",
+          "previousPath": "/Assets/SceneCraftAI/Art/Models/KenneyFurnitureKit/bookcaseClosedWide.fbx.meta"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Art/Models/KenneyFurnitureKit/bookcaseOpen.fbx",
+          "previousPath": "/Assets/SceneCraftAI/Art/Models/KenneyFurnitureKit/bookcaseOpen.fbx"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Art/Models/KenneyFurnitureKit/bookcaseOpen.fbx.meta",
+          "previousPath": "/Assets/SceneCraftAI/Art/Models/KenneyFurnitureKit/bookcaseOpen.fbx.meta"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Art/Models/KenneyFurnitureKit/bookcaseOpenLow.fbx",
+          "previousPath": "/Assets/SceneCraftAI/Art/Models/KenneyFurnitureKit/bookcaseOpenLow.fbx"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Art/Models/KenneyFurnitureKit/bookcaseOpenLow.fbx.meta",
+          "previousPath": "/Assets/SceneCraftAI/Art/Models/KenneyFurnitureKit/bookcaseOpenLow.fbx.meta"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Art/Models/KenneyFurnitureKit/cabinetTelevision.fbx",
+          "previousPath": "/Assets/SceneCraftAI/Art/Models/KenneyFurnitureKit/cabinetTelevision.fbx"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Art/Models/KenneyFurnitureKit/cabinetTelevision.fbx.meta",
+          "previousPath": "/Assets/SceneCraftAI/Art/Models/KenneyFurnitureKit/cabinetTelevision.fbx.meta"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Art/Models/KenneyFurnitureKit/cabinetTelevisionDoors.fbx",
+          "previousPath": "/Assets/SceneCraftAI/Art/Models/KenneyFurnitureKit/cabinetTelevisionDoors.fbx"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Art/Models/KenneyFurnitureKit/cabinetTelevisionDoors.fbx.meta",
+          "previousPath": "/Assets/SceneCraftAI/Art/Models/KenneyFurnitureKit/cabinetTelevisionDoors.fbx.meta"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Art/Models/KenneyFurnitureKit/chairCushion.fbx",
+          "previousPath": "/Assets/SceneCraftAI/Art/Models/KenneyFurnitureKit/chairCushion.fbx"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Art/Models/KenneyFurnitureKit/chairCushion.fbx.meta",
+          "previousPath": "/Assets/SceneCraftAI/Art/Models/KenneyFurnitureKit/chairCushion.fbx.meta"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Art/Models/KenneyFurnitureKit/chairModernCushion.fbx",
+          "previousPath": "/Assets/SceneCraftAI/Art/Models/KenneyFurnitureKit/chairModernCushion.fbx"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Art/Models/KenneyFurnitureKit/chairModernCushion.fbx.meta",
+          "previousPath": "/Assets/SceneCraftAI/Art/Models/KenneyFurnitureKit/chairModernCushion.fbx.meta"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Art/Models/KenneyFurnitureKit/chairRounded.fbx",
+          "previousPath": "/Assets/SceneCraftAI/Art/Models/KenneyFurnitureKit/chairRounded.fbx"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Art/Models/KenneyFurnitureKit/chairRounded.fbx.meta",
+          "previousPath": "/Assets/SceneCraftAI/Art/Models/KenneyFurnitureKit/chairRounded.fbx.meta"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Art/Models/KenneyFurnitureKit/desk.fbx",
+          "previousPath": "/Assets/SceneCraftAI/Art/Models/KenneyFurnitureKit/desk.fbx"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Art/Models/KenneyFurnitureKit/desk.fbx.meta",
+          "previousPath": "/Assets/SceneCraftAI/Art/Models/KenneyFurnitureKit/desk.fbx.meta"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Art/Models/KenneyFurnitureKit/deskCorner.fbx",
+          "previousPath": "/Assets/SceneCraftAI/Art/Models/KenneyFurnitureKit/deskCorner.fbx"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Art/Models/KenneyFurnitureKit/deskCorner.fbx.meta",
+          "previousPath": "/Assets/SceneCraftAI/Art/Models/KenneyFurnitureKit/deskCorner.fbx.meta"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Art/Models/KenneyFurnitureKit/lampRoundFloor.fbx",
+          "previousPath": "/Assets/SceneCraftAI/Art/Models/KenneyFurnitureKit/lampRoundFloor.fbx"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Art/Models/KenneyFurnitureKit/lampRoundFloor.fbx.meta",
+          "previousPath": "/Assets/SceneCraftAI/Art/Models/KenneyFurnitureKit/lampRoundFloor.fbx.meta"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Art/Models/KenneyFurnitureKit/lampSquareFloor.fbx",
+          "previousPath": "/Assets/SceneCraftAI/Art/Models/KenneyFurnitureKit/lampSquareFloor.fbx"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Art/Models/KenneyFurnitureKit/lampSquareFloor.fbx.meta",
+          "previousPath": "/Assets/SceneCraftAI/Art/Models/KenneyFurnitureKit/lampSquareFloor.fbx.meta"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Art/Models/KenneyFurnitureKit/loungeDesignSofa.fbx",
+          "previousPath": "/Assets/SceneCraftAI/Art/Models/KenneyFurnitureKit/loungeDesignSofa.fbx"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Art/Models/KenneyFurnitureKit/loungeDesignSofa.fbx.meta",
+          "previousPath": "/Assets/SceneCraftAI/Art/Models/KenneyFurnitureKit/loungeDesignSofa.fbx.meta"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Art/Models/KenneyFurnitureKit/loungeSofa.fbx",
+          "previousPath": "/Assets/SceneCraftAI/Art/Models/KenneyFurnitureKit/loungeSofa.fbx"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Art/Models/KenneyFurnitureKit/loungeSofa.fbx.meta",
+          "previousPath": "/Assets/SceneCraftAI/Art/Models/KenneyFurnitureKit/loungeSofa.fbx.meta"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Art/Models/KenneyFurnitureKit/loungeSofaLong.fbx",
+          "previousPath": "/Assets/SceneCraftAI/Art/Models/KenneyFurnitureKit/loungeSofaLong.fbx"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Art/Models/KenneyFurnitureKit/loungeSofaLong.fbx.meta",
+          "previousPath": "/Assets/SceneCraftAI/Art/Models/KenneyFurnitureKit/loungeSofaLong.fbx.meta"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Art/Models/KenneyFurnitureKit/pottedPlant.fbx",
+          "previousPath": "/Assets/SceneCraftAI/Art/Models/KenneyFurnitureKit/pottedPlant.fbx"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Art/Models/KenneyFurnitureKit/pottedPlant.fbx.meta",
+          "previousPath": "/Assets/SceneCraftAI/Art/Models/KenneyFurnitureKit/pottedPlant.fbx.meta"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Art/Models/KenneyFurnitureKit/rugRectangle.fbx",
+          "previousPath": "/Assets/SceneCraftAI/Art/Models/KenneyFurnitureKit/rugRectangle.fbx"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Art/Models/KenneyFurnitureKit/rugRectangle.fbx.meta",
+          "previousPath": "/Assets/SceneCraftAI/Art/Models/KenneyFurnitureKit/rugRectangle.fbx.meta"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Art/Models/KenneyFurnitureKit/rugRound.fbx",
+          "previousPath": "/Assets/SceneCraftAI/Art/Models/KenneyFurnitureKit/rugRound.fbx"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Art/Models/KenneyFurnitureKit/rugRound.fbx.meta",
+          "previousPath": "/Assets/SceneCraftAI/Art/Models/KenneyFurnitureKit/rugRound.fbx.meta"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Art/Models/KenneyFurnitureKit/sideTable.fbx",
+          "previousPath": "/Assets/SceneCraftAI/Art/Models/KenneyFurnitureKit/sideTable.fbx"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Art/Models/KenneyFurnitureKit/sideTable.fbx.meta",
+          "previousPath": "/Assets/SceneCraftAI/Art/Models/KenneyFurnitureKit/sideTable.fbx.meta"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Art/Models/KenneyFurnitureKit/sideTableDrawers.fbx",
+          "previousPath": "/Assets/SceneCraftAI/Art/Models/KenneyFurnitureKit/sideTableDrawers.fbx"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Art/Models/KenneyFurnitureKit/sideTableDrawers.fbx.meta",
+          "previousPath": "/Assets/SceneCraftAI/Art/Models/KenneyFurnitureKit/sideTableDrawers.fbx.meta"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Art/Models/KenneyFurnitureKit/table.fbx",
+          "previousPath": "/Assets/SceneCraftAI/Art/Models/KenneyFurnitureKit/table.fbx"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Art/Models/KenneyFurnitureKit/table.fbx.meta",
+          "previousPath": "/Assets/SceneCraftAI/Art/Models/KenneyFurnitureKit/table.fbx.meta"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Art/Models/KenneyFurnitureKit/tableCoffee.fbx",
+          "previousPath": "/Assets/SceneCraftAI/Art/Models/KenneyFurnitureKit/tableCoffee.fbx"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Art/Models/KenneyFurnitureKit/tableCoffee.fbx.meta",
+          "previousPath": "/Assets/SceneCraftAI/Art/Models/KenneyFurnitureKit/tableCoffee.fbx.meta"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Art/Models/KenneyFurnitureKit/tableCoffeeGlass.fbx",
+          "previousPath": "/Assets/SceneCraftAI/Art/Models/KenneyFurnitureKit/tableCoffeeGlass.fbx"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Art/Models/KenneyFurnitureKit/tableCoffeeGlass.fbx.meta",
+          "previousPath": "/Assets/SceneCraftAI/Art/Models/KenneyFurnitureKit/tableCoffeeGlass.fbx.meta"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Art/Models/KenneyFurnitureKit/tableCoffeeSquare.fbx",
+          "previousPath": "/Assets/SceneCraftAI/Art/Models/KenneyFurnitureKit/tableCoffeeSquare.fbx"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Art/Models/KenneyFurnitureKit/tableCoffeeSquare.fbx.meta",
+          "previousPath": "/Assets/SceneCraftAI/Art/Models/KenneyFurnitureKit/tableCoffeeSquare.fbx.meta"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Art/Models/KenneyFurnitureKit/tableCross.fbx",
+          "previousPath": "/Assets/SceneCraftAI/Art/Models/KenneyFurnitureKit/tableCross.fbx"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Art/Models/KenneyFurnitureKit/tableCross.fbx.meta",
+          "previousPath": "/Assets/SceneCraftAI/Art/Models/KenneyFurnitureKit/tableCross.fbx.meta"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Art/Models/KenneyFurnitureKit/tableRound.fbx",
+          "previousPath": "/Assets/SceneCraftAI/Art/Models/KenneyFurnitureKit/tableRound.fbx"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Art/Models/KenneyFurnitureKit/tableRound.fbx.meta",
+          "previousPath": "/Assets/SceneCraftAI/Art/Models/KenneyFurnitureKit/tableRound.fbx.meta"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Art/Models/KenneyFurnitureKit.meta",
+          "previousPath": "/Assets/SceneCraftAI/Art/Models/KenneyFurnitureKit.meta"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Art/Models.meta",
+          "previousPath": "/Assets/SceneCraftAI/Art/Models.meta"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Art/Prefabs.meta",
+          "previousPath": "/Assets/SceneCraftAI/Art/Prefabs.meta"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Art/README.md",
+          "previousPath": "/Assets/SceneCraftAI/Art/README.md"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Art/README.md.meta",
+          "previousPath": "/Assets/SceneCraftAI/Art/README.md.meta"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Art/Textures",
+          "previousPath": "/Assets/SceneCraftAI/Art/Textures"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Art/Textures/.gitkeep",
+          "previousPath": "/Assets/SceneCraftAI/Art/Textures/.gitkeep"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Art/Textures.meta",
+          "previousPath": "/Assets/SceneCraftAI/Art/Textures.meta"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Resources",
+          "previousPath": "/Assets/SceneCraftAI/Resources"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Resources/SceneCraftAssetLibrary.asset",
+          "previousPath": "/Assets/SceneCraftAI/Resources/SceneCraftAssetLibrary.asset"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Resources/SceneCraftAssetLibrary.asset.meta",
+          "previousPath": "/Assets/SceneCraftAI/Resources/SceneCraftAssetLibrary.asset.meta"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Scripts",
+          "previousPath": "/Assets/SceneCraftAI/Scripts"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Scripts/Assets",
+          "previousPath": "/Assets/SceneCraftAI/Scripts/Assets"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Scripts/Assets/AssetCatalog.cs",
+          "previousPath": "/Assets/SceneCraftAI/Scripts/Assets/AssetCatalog.cs"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Scripts/Assets/AssetCatalog.cs.meta",
+          "previousPath": "/Assets/SceneCraftAI/Scripts/Assets/AssetCatalog.cs.meta"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Scripts/Assets/HybridAssetFactory.cs",
+          "previousPath": "/Assets/SceneCraftAI/Scripts/Assets/HybridAssetFactory.cs"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Scripts/Assets/HybridAssetFactory.cs.meta",
+          "previousPath": "/Assets/SceneCraftAI/Scripts/Assets/HybridAssetFactory.cs.meta"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Scripts/Assets/PrefabAssetLibrary.cs",
+          "previousPath": "/Assets/SceneCraftAI/Scripts/Assets/PrefabAssetLibrary.cs"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Scripts/Assets/PrefabAssetLibrary.cs.meta",
+          "previousPath": "/Assets/SceneCraftAI/Scripts/Assets/PrefabAssetLibrary.cs.meta"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Scripts/Assets/ProceduralAssetFactory.cs",
+          "previousPath": "/Assets/SceneCraftAI/Scripts/Assets/ProceduralAssetFactory.cs"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Scripts/Assets/ProceduralAssetFactory.cs.meta",
+          "previousPath": "/Assets/SceneCraftAI/Scripts/Assets/ProceduralAssetFactory.cs.meta"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Scripts/Layout",
+          "previousPath": "/Assets/SceneCraftAI/Scripts/Layout"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Scripts/Layout/SceneLayoutEngine.cs",
+          "previousPath": "/Assets/SceneCraftAI/Scripts/Layout/SceneLayoutEngine.cs"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Scripts/Layout/SceneLayoutEngine.cs.meta",
+          "previousPath": "/Assets/SceneCraftAI/Scripts/Layout/SceneLayoutEngine.cs.meta"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Scripts/Layout/SceneLayoutOptimizer.cs",
+          "previousPath": "/Assets/SceneCraftAI/Scripts/Layout/SceneLayoutOptimizer.cs"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Scripts/Layout/SceneLayoutOptimizer.cs.meta",
+          "previousPath": "/Assets/SceneCraftAI/Scripts/Layout/SceneLayoutOptimizer.cs.meta"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Scripts/Planning",
+          "previousPath": "/Assets/SceneCraftAI/Scripts/Planning"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Scripts/Planning/OfflineScenePlanner.cs",
+          "previousPath": "/Assets/SceneCraftAI/Scripts/Planning/OfflineScenePlanner.cs"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Scripts/Planning/OfflineScenePlanner.cs.meta",
+          "previousPath": "/Assets/SceneCraftAI/Scripts/Planning/OfflineScenePlanner.cs.meta"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Scripts/Planning/HousePromptPlanner.cs",
+          "previousPath": "/Assets/SceneCraftAI/Scripts/Planning/HousePromptPlanner.cs"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Scripts/Planning/HousePromptPlanner.cs.meta",
+          "previousPath": "/Assets/SceneCraftAI/Scripts/Planning/HousePromptPlanner.cs.meta"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Scripts/Planning/DeepSeekScenePlanner.cs",
+          "previousPath": "/Assets/SceneCraftAI/Scripts/Planning/DeepSeekScenePlanner.cs"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Scripts/Planning/DeepSeekScenePlanner.cs.meta",
+          "previousPath": "/Assets/SceneCraftAI/Scripts/Planning/DeepSeekScenePlanner.cs.meta"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Scripts/Planning/IScenePlanner.cs",
+          "previousPath": "/Assets/SceneCraftAI/Scripts/Planning/IScenePlanner.cs"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Scripts/Planning/IScenePlanner.cs.meta",
+          "previousPath": "/Assets/SceneCraftAI/Scripts/Planning/IScenePlanner.cs.meta"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Scripts/Runtime",
+          "previousPath": "/Assets/SceneCraftAI/Scripts/Runtime"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Scripts/Runtime/SceneRuntimeController.cs",
+          "previousPath": "/Assets/SceneCraftAI/Scripts/Runtime/SceneRuntimeController.cs"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Scripts/Runtime/SceneRuntimeController.cs.meta",
+          "previousPath": "/Assets/SceneCraftAI/Scripts/Runtime/SceneRuntimeController.cs.meta"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Scripts/Runtime/RoomViewBuilder.cs",
+          "previousPath": "/Assets/SceneCraftAI/Scripts/Runtime/RoomViewBuilder.cs"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Scripts/Runtime/RoomViewBuilder.cs.meta",
+          "previousPath": "/Assets/SceneCraftAI/Scripts/Runtime/RoomViewBuilder.cs.meta"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Scripts/Runtime/OrbitCameraController.cs",
+          "previousPath": "/Assets/SceneCraftAI/Scripts/Runtime/OrbitCameraController.cs"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Scripts/Runtime/OrbitCameraController.cs.meta",
+          "previousPath": "/Assets/SceneCraftAI/Scripts/Runtime/OrbitCameraController.cs.meta"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Scripts/Runtime/RuntimeSelectionController.cs",
+          "previousPath": "/Assets/SceneCraftAI/Scripts/Runtime/RuntimeSelectionController.cs"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Scripts/Runtime/RuntimeSelectionController.cs.meta",
+          "previousPath": "/Assets/SceneCraftAI/Scripts/Runtime/RuntimeSelectionController.cs.meta"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Scripts/Runtime/SceneCraftBootstrap.cs",
+          "previousPath": "/Assets/SceneCraftAI/Scripts/Runtime/SceneCraftBootstrap.cs"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Scripts/Runtime/SceneCraftBootstrap.cs.meta",
+          "previousPath": "/Assets/SceneCraftAI/Scripts/Runtime/SceneCraftBootstrap.cs.meta"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Scripts/Runtime/SceneObjectView.cs",
+          "previousPath": "/Assets/SceneCraftAI/Scripts/Runtime/SceneObjectView.cs"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Scripts/Runtime/SceneObjectView.cs.meta",
+          "previousPath": "/Assets/SceneCraftAI/Scripts/Runtime/SceneObjectView.cs.meta"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Scripts/Domain",
+          "previousPath": "/Assets/SceneCraftAI/Scripts/Domain"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Scripts/Domain/SceneSpec.cs",
+          "previousPath": "/Assets/SceneCraftAI/Scripts/Domain/SceneSpec.cs"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Scripts/Domain/SceneSpec.cs.meta",
+          "previousPath": "/Assets/SceneCraftAI/Scripts/Domain/SceneSpec.cs.meta"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Scripts/Assets.meta",
+          "previousPath": "/Assets/SceneCraftAI/Scripts/Assets.meta"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Scripts/Domain.meta",
+          "previousPath": "/Assets/SceneCraftAI/Scripts/Domain.meta"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Scripts/Layout.meta",
+          "previousPath": "/Assets/SceneCraftAI/Scripts/Layout.meta"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Scripts/Planning.meta",
+          "previousPath": "/Assets/SceneCraftAI/Scripts/Planning.meta"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Scripts/Runtime.meta",
+          "previousPath": "/Assets/SceneCraftAI/Scripts/Runtime.meta"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Scripts/SceneCraftAI.Runtime.asmdef",
+          "previousPath": "/Assets/SceneCraftAI/Scripts/SceneCraftAI.Runtime.asmdef"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Scripts/SceneCraftAI.Runtime.asmdef.meta",
+          "previousPath": "/Assets/SceneCraftAI/Scripts/SceneCraftAI.Runtime.asmdef.meta"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Scripts/UI",
+          "previousPath": "/Assets/SceneCraftAI/Scripts/UI"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Scripts/UI/SceneCraftHud.cs",
+          "previousPath": "/Assets/SceneCraftAI/Scripts/UI/SceneCraftHud.cs"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Scripts/UI/SceneCraftHud.cs.meta",
+          "previousPath": "/Assets/SceneCraftAI/Scripts/UI/SceneCraftHud.cs.meta"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Scripts/UI.meta",
+          "previousPath": "/Assets/SceneCraftAI/Scripts/UI.meta"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Tests",
+          "previousPath": "/Assets/SceneCraftAI/Tests"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Tests/EditMode",
+          "previousPath": "/Assets/SceneCraftAI/Tests/EditMode"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Tests/EditMode/ScenePlanningTests.cs",
+          "previousPath": "/Assets/SceneCraftAI/Tests/EditMode/ScenePlanningTests.cs"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Tests/EditMode/ScenePlanningTests.cs.meta",
+          "previousPath": "/Assets/SceneCraftAI/Tests/EditMode/ScenePlanningTests.cs.meta"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Tests/EditMode/SceneCraftAI.EditModeTests.asmdef",
+          "previousPath": "/Assets/SceneCraftAI/Tests/EditMode/SceneCraftAI.EditModeTests.asmdef"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Tests/EditMode/SceneCraftAI.EditModeTests.asmdef.meta",
+          "previousPath": "/Assets/SceneCraftAI/Tests/EditMode/SceneCraftAI.EditModeTests.asmdef.meta"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Tests/PlayMode",
+          "previousPath": "/Assets/SceneCraftAI/Tests/PlayMode"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Tests/PlayMode/SceneCraftRuntimeTests.cs",
+          "previousPath": "/Assets/SceneCraftAI/Tests/PlayMode/SceneCraftRuntimeTests.cs"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Tests/PlayMode/SceneCraftRuntimeTests.cs.meta",
+          "previousPath": "/Assets/SceneCraftAI/Tests/PlayMode/SceneCraftRuntimeTests.cs.meta"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Tests/PlayMode/SceneCraftAI.PlayModeTests.asmdef",
+          "previousPath": "/Assets/SceneCraftAI/Tests/PlayMode/SceneCraftAI.PlayModeTests.asmdef"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Tests/PlayMode/SceneCraftAI.PlayModeTests.asmdef.meta",
+          "previousPath": "/Assets/SceneCraftAI/Tests/PlayMode/SceneCraftAI.PlayModeTests.asmdef.meta"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Tests/EditMode.meta",
+          "previousPath": "/Assets/SceneCraftAI/Tests/EditMode.meta"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Tests/PlayMode.meta",
+          "previousPath": "/Assets/SceneCraftAI/Tests/PlayMode.meta"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Art.meta",
+          "previousPath": "/Assets/SceneCraftAI/Art.meta"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Editor",
+          "previousPath": "/Assets/SceneCraftAI/Editor"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Editor/KenneyFurnitureAssetBuilder.cs",
+          "previousPath": "/Assets/SceneCraftAI/Editor/KenneyFurnitureAssetBuilder.cs"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Editor/KenneyFurnitureAssetBuilder.cs.meta",
+          "previousPath": "/Assets/SceneCraftAI/Editor/KenneyFurnitureAssetBuilder.cs.meta"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Editor/PromptChecks.cs",
+          "previousPath": "/Assets/SceneCraftAI/Editor/PromptChecks.cs"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Editor/PromptChecks.cs.meta",
+          "previousPath": "/Assets/SceneCraftAI/Editor/PromptChecks.cs.meta"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Editor.meta",
+          "previousPath": "/Assets/SceneCraftAI/Editor.meta"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Resources.meta",
+          "previousPath": "/Assets/SceneCraftAI/Resources.meta"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Scripts.meta",
+          "previousPath": "/Assets/SceneCraftAI/Scripts.meta"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Tests.meta",
+          "previousPath": "/Assets/SceneCraftAI/Tests.meta"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/Readme.asset",
+          "previousPath": "/Assets/Readme.asset"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/Readme.asset.meta",
+          "previousPath": "/Assets/Readme.asset.meta"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI.meta",
+          "previousPath": "/Assets/SceneCraftAI.meta"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/Scenes",
+          "previousPath": "/Assets/Scenes"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/Scenes/SampleScene.unity",
+          "previousPath": "/Assets/Scenes/SampleScene.unity"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/Scenes/SampleScene.unity.meta",
+          "previousPath": "/Assets/Scenes/SampleScene.unity.meta"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/Scenes.meta",
+          "previousPath": "/Assets/Scenes.meta"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/Settings.meta",
+          "previousPath": "/Assets/Settings.meta"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/TutorialInfo",
+          "previousPath": "/Assets/TutorialInfo"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/TutorialInfo/Icons",
+          "previousPath": "/Assets/TutorialInfo/Icons"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/TutorialInfo/Icons/URP.png",
+          "previousPath": "/Assets/TutorialInfo/Icons/URP.png"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/TutorialInfo/Icons/URP.png.meta",
+          "previousPath": "/Assets/TutorialInfo/Icons/URP.png.meta"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/TutorialInfo/Icons.meta",
+          "previousPath": "/Assets/TutorialInfo/Icons.meta"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/TutorialInfo/Layout.wlt",
+          "previousPath": "/Assets/TutorialInfo/Layout.wlt"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/TutorialInfo/Layout.wlt.meta",
+          "previousPath": "/Assets/TutorialInfo/Layout.wlt.meta"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/TutorialInfo/Scripts",
+          "previousPath": "/Assets/TutorialInfo/Scripts"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/TutorialInfo/Scripts/Editor",
+          "previousPath": "/Assets/TutorialInfo/Scripts/Editor"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/TutorialInfo/Scripts/Editor/ReadmeEditor.cs",
+          "previousPath": "/Assets/TutorialInfo/Scripts/Editor/ReadmeEditor.cs"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/TutorialInfo/Scripts/Editor/ReadmeEditor.cs.meta",
+          "previousPath": "/Assets/TutorialInfo/Scripts/Editor/ReadmeEditor.cs.meta"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/TutorialInfo/Scripts/Editor.meta",
+          "previousPath": "/Assets/TutorialInfo/Scripts/Editor.meta"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/TutorialInfo/Scripts/Readme.cs",
+          "previousPath": "/Assets/TutorialInfo/Scripts/Readme.cs"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/TutorialInfo/Scripts/Readme.cs.meta",
+          "previousPath": "/Assets/TutorialInfo/Scripts/Readme.cs.meta"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/TutorialInfo/Scripts.meta",
+          "previousPath": "/Assets/TutorialInfo/Scripts.meta"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/TutorialInfo.meta",
+          "previousPath": "/Assets/TutorialInfo.meta"
+        },
+        {
+          "type": "Added",
+          "path": "/ProjectSettings/ProjectSettings.asset",
+          "previousPath": "/ProjectSettings/ProjectSettings.asset"
+        },
+        {
+          "type": "Added",
+          "path": "/ProjectSettings/AudioManager.asset",
+          "previousPath": "/ProjectSettings/AudioManager.asset"
+        },
+        {
+          "type": "Added",
+          "path": "/ProjectSettings/BurstAotSettings_StandaloneWindows.json",
+          "previousPath": "/ProjectSettings/BurstAotSettings_StandaloneWindows.json"
+        },
+        {
+          "type": "Added",
+          "path": "/ProjectSettings/ClusterInputManager.asset",
+          "previousPath": "/ProjectSettings/ClusterInputManager.asset"
+        },
+        {
+          "type": "Added",
+          "path": "/ProjectSettings/CommonBurstAotSettings.json",
+          "previousPath": "/ProjectSettings/CommonBurstAotSettings.json"
+        },
+        {
+          "type": "Added",
+          "path": "/ProjectSettings/DynamicsManager.asset",
+          "previousPath": "/ProjectSettings/DynamicsManager.asset"
+        },
+        {
+          "type": "Added",
+          "path": "/ProjectSettings/EditorBuildSettings.asset",
+          "previousPath": "/ProjectSettings/EditorBuildSettings.asset"
+        },
+        {
+          "type": "Added",
+          "path": "/ProjectSettings/EditorSettings.asset",
+          "previousPath": "/ProjectSettings/EditorSettings.asset"
+        },
+        {
+          "type": "Added",
+          "path": "/ProjectSettings/GraphicsSettings.asset",
+          "previousPath": "/ProjectSettings/GraphicsSettings.asset"
+        },
+        {
+          "type": "Added",
+          "path": "/ProjectSettings/InputManager.asset",
+          "previousPath": "/ProjectSettings/InputManager.asset"
+        },
+        {
+          "type": "Added",
+          "path": "/ProjectSettings/MemorySettings.asset",
+          "previousPath": "/ProjectSettings/MemorySettings.asset"
+        },
+        {
+          "type": "Added",
+          "path": "/ProjectSettings/NavMeshAreas.asset",
+          "previousPath": "/ProjectSettings/NavMeshAreas.asset"
+        },
+        {
+          "type": "Added",
+          "path": "/ProjectSettings/PackageManagerSettings.asset",
+          "previousPath": "/ProjectSettings/PackageManagerSettings.asset"
+        },
+        {
+          "type": "Added",
+          "path": "/ProjectSettings/Physics2DSettings.asset",
+          "previousPath": "/ProjectSettings/Physics2DSettings.asset"
+        },
+        {
+          "type": "Added",
+          "path": "/ProjectSettings/PresetManager.asset",
+          "previousPath": "/ProjectSettings/PresetManager.asset"
+        },
+        {
+          "type": "Added",
+          "path": "/ProjectSettings/ProjectVersion.txt",
+          "previousPath": "/ProjectSettings/ProjectVersion.txt"
+        },
+        {
+          "type": "Added",
+          "path": "/ProjectSettings/QualitySettings.asset",
+          "previousPath": "/ProjectSettings/QualitySettings.asset"
+        },
+        {
+          "type": "Added",
+          "path": "/ProjectSettings/SceneTemplateSettings.json",
+          "previousPath": "/ProjectSettings/SceneTemplateSettings.json"
+        },
+        {
+          "type": "Added",
+          "path": "/ProjectSettings/ShaderGraphSettings.asset",
+          "previousPath": "/ProjectSettings/ShaderGraphSettings.asset"
+        },
+        {
+          "type": "Added",
+          "path": "/ProjectSettings/TagManager.asset",
+          "previousPath": "/ProjectSettings/TagManager.asset"
+        },
+        {
+          "type": "Added",
+          "path": "/ProjectSettings/TimeManager.asset",
+          "previousPath": "/ProjectSettings/TimeManager.asset"
+        },
+        {
+          "type": "Added",
+          "path": "/ProjectSettings/UnityConnectSettings.asset",
+          "previousPath": "/ProjectSettings/UnityConnectSettings.asset"
+        },
+        {
+          "type": "Added",
+          "path": "/ProjectSettings/URPProjectSettings.asset",
+          "previousPath": "/ProjectSettings/URPProjectSettings.asset"
+        },
+        {
+          "type": "Added",
+          "path": "/ProjectSettings/VersionControlSettings.asset",
+          "previousPath": "/ProjectSettings/VersionControlSettings.asset"
+        },
+        {
+          "type": "Added",
+          "path": "/ProjectSettings/VFXManager.asset",
+          "previousPath": "/ProjectSettings/VFXManager.asset"
+        },
+        {
+          "type": "Added",
+          "path": "/ProjectSettings/XRSettings.asset",
+          "previousPath": "/ProjectSettings/XRSettings.asset"
+        },
+        {
+          "type": "Added",
+          "path": "/Packages/manifest.json",
+          "previousPath": "/Packages/manifest.json"
+        },
+        {
+          "type": "Added",
+          "path": "/Packages/packages-lock.json",
+          "previousPath": "/Packages/packages-lock.json"
+        },
+        {
+          "type": "Added",
+          "path": "/Tools/review-code.mjs",
+          "previousPath": "/Tools/review-code.mjs"
+        }
+      ]
+    },
+    {
+      "changeset": 2,
+      "date": "2026-10-03T13:58:44+08:00",
+      "branch": "/main",
+      "comment": "Improve bilingual scene constraints and room geometry: preserve cloud plans, enforce scoped quantities and exclusions after asset matching, support full room programs, keep extra rooms non-overlapping, deduplicate shared walls, place exterior windows, validate paired doors and unify wall clearance. Use property blocks for interaction colors. Verified 94 EditMode, 7 PlayMode and 11 prompt diagnostics; no paid API calls. Details in CHANGELOG.md.",
+      "changedItems": [
+        {
+          "type": "Changed",
+          "path": "/Assets/SceneCraftAI/Scripts/Domain/SceneSpec.cs",
+          "previousPath": "/Assets/SceneCraftAI/Scripts/Domain/SceneSpec.cs"
+        },
+        {
+          "type": "Changed",
+          "path": "/Assets/SceneCraftAI/Scripts/Planning/DeepSeekScenePlanner.cs",
+          "previousPath": "/Assets/SceneCraftAI/Scripts/Planning/DeepSeekScenePlanner.cs"
+        },
+        {
+          "type": "Changed",
+          "path": "/Assets/SceneCraftAI/Scripts/Planning/HousePromptPlanner.cs",
+          "previousPath": "/Assets/SceneCraftAI/Scripts/Planning/HousePromptPlanner.cs"
+        },
+        {
+          "type": "Changed",
+          "path": "/Assets/SceneCraftAI/Scripts/Planning/OfflineScenePlanner.cs",
+          "previousPath": "/Assets/SceneCraftAI/Scripts/Planning/OfflineScenePlanner.cs"
+        },
+        {
+          "type": "Changed",
+          "path": "/Assets/SceneCraftAI/Scripts/Layout/SceneLayoutOptimizer.cs",
+          "previousPath": "/Assets/SceneCraftAI/Scripts/Layout/SceneLayoutOptimizer.cs"
+        },
+        {
+          "type": "Changed",
+          "path": "/Assets/SceneCraftAI/Scripts/Layout/SceneLayoutEngine.cs",
+          "previousPath": "/Assets/SceneCraftAI/Scripts/Layout/SceneLayoutEngine.cs"
+        },
+        {
+          "type": "Changed",
+          "path": "/Assets/SceneCraftAI/Scripts/Assets/AssetCatalog.cs",
+          "previousPath": "/Assets/SceneCraftAI/Scripts/Assets/AssetCatalog.cs"
+        },
+        {
+          "type": "Changed",
+          "path": "/Assets/SceneCraftAI/Scripts/Runtime/SceneObjectView.cs",
+          "previousPath": "/Assets/SceneCraftAI/Scripts/Runtime/SceneObjectView.cs"
+        },
+        {
+          "type": "Changed",
+          "path": "/Assets/SceneCraftAI/Scripts/Runtime/RoomViewBuilder.cs",
+          "previousPath": "/Assets/SceneCraftAI/Scripts/Runtime/RoomViewBuilder.cs"
+        },
+        {
+          "type": "Changed",
+          "path": "/Assets/SceneCraftAI/Scripts/Runtime/SceneRuntimeController.cs",
+          "previousPath": "/Assets/SceneCraftAI/Scripts/Runtime/SceneRuntimeController.cs"
+        },
+        {
+          "type": "Changed",
+          "path": "/Assets/SceneCraftAI/Tests/PlayMode/SceneCraftRuntimeTests.cs",
+          "previousPath": "/Assets/SceneCraftAI/Tests/PlayMode/SceneCraftRuntimeTests.cs"
+        },
+        {
+          "type": "Changed",
+          "path": "/README.md",
+          "previousPath": "/README.md"
+        },
+        {
+          "type": "Changed",
+          "path": "/PORTFOLIO.md",
+          "previousPath": "/PORTFOLIO.md"
+        },
+        {
+          "type": "Changed",
+          "path": "/CODE_REVIEW.md",
+          "previousPath": "/CODE_REVIEW.md"
+        },
+        {
+          "type": "Changed",
+          "path": "/CHANGELOG.md",
+          "previousPath": "/CHANGELOG.md"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Scripts/Domain/RoomGeometry.cs",
+          "previousPath": "/Assets/SceneCraftAI/Scripts/Domain/RoomGeometry.cs"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Scripts/Domain/RoomGeometry.cs.meta",
+          "previousPath": "/Assets/SceneCraftAI/Scripts/Domain/RoomGeometry.cs.meta"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Scripts/Planning/PromptRules.cs",
+          "previousPath": "/Assets/SceneCraftAI/Scripts/Planning/PromptRules.cs"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Scripts/Planning/PromptRules.cs.meta",
+          "previousPath": "/Assets/SceneCraftAI/Scripts/Planning/PromptRules.cs.meta"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Tests/EditMode/PromptRuleTests.cs",
+          "previousPath": "/Assets/SceneCraftAI/Tests/EditMode/PromptRuleTests.cs"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Tests/EditMode/PromptRuleTests.cs.meta",
+          "previousPath": "/Assets/SceneCraftAI/Tests/EditMode/PromptRuleTests.cs.meta"
+        }
+      ]
+    },
+    {
+      "changeset": 3,
+      "date": "2026-10-03T15:39:21+08:00",
+      "branch": "/main",
+      "comment": "Add bilingual scene controls and live build workflow with validation",
+      "changedItems": [
+        {
+          "type": "Changed",
+          "path": "/Assets/SceneCraftAI/Scripts/UI/SceneCraftHud.cs",
+          "previousPath": "/Assets/SceneCraftAI/Scripts/UI/SceneCraftHud.cs"
+        },
+        {
+          "type": "Changed",
+          "path": "/Assets/SceneCraftAI/Scripts/Runtime/RuntimeSelectionController.cs",
+          "previousPath": "/Assets/SceneCraftAI/Scripts/Runtime/RuntimeSelectionController.cs"
+        },
+        {
+          "type": "Changed",
+          "path": "/Assets/SceneCraftAI/Scripts/Runtime/SceneCraftBootstrap.cs",
+          "previousPath": "/Assets/SceneCraftAI/Scripts/Runtime/SceneCraftBootstrap.cs"
+        },
+        {
+          "type": "Changed",
+          "path": "/Assets/SceneCraftAI/Scripts/Runtime/SceneRuntimeController.cs",
+          "previousPath": "/Assets/SceneCraftAI/Scripts/Runtime/SceneRuntimeController.cs"
+        },
+        {
+          "type": "Changed",
+          "path": "/Assets/SceneCraftAI/Tests/PlayMode/SceneCraftAI.PlayModeTests.asmdef",
+          "previousPath": "/Assets/SceneCraftAI/Tests/PlayMode/SceneCraftAI.PlayModeTests.asmdef"
+        },
+        {
+          "type": "Changed",
+          "path": "/Assets/SceneCraftAI/Tests/PlayMode/SceneCraftRuntimeTests.cs",
+          "previousPath": "/Assets/SceneCraftAI/Tests/PlayMode/SceneCraftRuntimeTests.cs"
+        },
+        {
+          "type": "Changed",
+          "path": "/README.md",
+          "previousPath": "/README.md"
+        },
+        {
+          "type": "Changed",
+          "path": "/PORTFOLIO.md",
+          "previousPath": "/PORTFOLIO.md"
+        },
+        {
+          "type": "Changed",
+          "path": "/CHANGELOG.md",
+          "previousPath": "/CHANGELOG.md"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Scripts/UI/UiText.cs",
+          "previousPath": "/Assets/SceneCraftAI/Scripts/UI/UiText.cs"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Scripts/UI/UiText.cs.meta",
+          "previousPath": "/Assets/SceneCraftAI/Scripts/UI/UiText.cs.meta"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Tests/EditMode/UiTextTests.cs",
+          "previousPath": "/Assets/SceneCraftAI/Tests/EditMode/UiTextTests.cs"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Tests/EditMode/UiTextTests.cs.meta",
+          "previousPath": "/Assets/SceneCraftAI/Tests/EditMode/UiTextTests.cs.meta"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Tests/PlayMode/HudTests.cs",
+          "previousPath": "/Assets/SceneCraftAI/Tests/PlayMode/HudTests.cs"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Tests/PlayMode/HudTests.cs.meta",
+          "previousPath": "/Assets/SceneCraftAI/Tests/PlayMode/HudTests.cs.meta"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Tests/PlayMode/LanguageTests.cs",
+          "previousPath": "/Assets/SceneCraftAI/Tests/PlayMode/LanguageTests.cs"
+        },
+        {
+          "type": "Added",
+          "path": "/Assets/SceneCraftAI/Tests/PlayMode/LanguageTests.cs.meta",
+          "previousPath": "/Assets/SceneCraftAI/Tests/PlayMode/LanguageTests.cs.meta"
+        }
+      ]
+    }
+  ]
+}

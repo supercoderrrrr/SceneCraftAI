@@ -1,0 +1,100 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8d8328c918a6794e983e7850fb97fae, type: 3}
+  m_Name: SceneCraftAssetLibrary
+  m_EditorClassIdentifier: 
+  entries:
+  - assetId: bed_oak_double
+    prefab: {fileID: 8588456864807103054, guid: 81bce6c675605aa468469f0efd9b035a,
+      type: 3}
+  - assetId: bed_blue_double
+    prefab: {fileID: 8588456864807103054, guid: 81bce6c675605aa468469f0efd9b035a,
+      type: 3}
+  - assetId: bed_oak_single
+    prefab: {fileID: 6346817491175511162, guid: e2feec1ed78f8ed4b8ec3dd6b823ac5a,
+      type: 3}
+  - assetId: nightstand_oak
+    prefab: {fileID: 8556767783688634196, guid: c223c159101a6a249b00d637fec9c558,
+      type: 3}
+  - assetId: nightstand_minimal
+    prefab: {fileID: 9162766588287226928, guid: d8e28d6eca3562043ae827e11c2b916f,
+      type: 3}
+  - assetId: wardrobe_oak
+    prefab: {fileID: 5280646816095998475, guid: 19a823f6e5b12d449b535f6a52c3565f,
+      type: 3}
+  - assetId: sofa_cream
+    prefab: {fileID: 5945888745801243975, guid: 57418131d77571c49b56e6a631411cc3,
+      type: 3}
+  - assetId: sofa_sage
+    prefab: {fileID: 7792368944721407997, guid: 4c604389ebdc9e74aacb948d2a9f8deb,
+      type: 3}
+  - assetId: sofa_blue_compact
+    prefab: {fileID: 4883677131417933067, guid: f5066d20075ea464689a6e3e20a6812f,
+      type: 3}
+  - assetId: coffee_table_oak
+    prefab: {fileID: 8260496115949104957, guid: eb9806ba35b7bbc44b3032f157bc4579,
+      type: 3}
+  - assetId: coffee_table_charcoal
+    prefab: {fileID: 426131961119205084, guid: a7f02bc9837bd49438682ef427401a87, type: 3}
+  - assetId: coffee_table_square
+    prefab: {fileID: 6178303511532760472, guid: 98687b162eeb270419f0814105075a26,
+      type: 3}
+  - assetId: dining_table_oak
+    prefab: {fileID: 3054788801421484074, guid: f41ee4ea74eaae64483d34ccdb770f29,
+      type: 3}
+  - assetId: dining_table_charcoal
+    prefab: {fileID: 9048991366292318901, guid: 39140ac7cf39f9149b4dfe9f85e290d2,
+      type: 3}
+  - assetId: dining_table_round
+    prefab: {fileID: 5538361312641199238, guid: 646d0f2b7ac41af40aef93325106b08d,
+      type: 3}
+  - assetId: tv_stand_charcoal
+    prefab: {fileID: 7783323747958226310, guid: d8eef0c00b480a746aaf96e4f963ce0d,
+      type: 3}
+  - assetId: tv_stand_oak_doors
+    prefab: {fileID: 2837129247734265045, guid: c5ab62312caff0d47a7d591c87584a15,
+      type: 3}
+  - assetId: desk_oak
+    prefab: {fileID: 6640089311617856045, guid: f453d59dbeacdc1459e129f018ba5e88,
+      type: 3}
+  - assetId: desk_charcoal
+    prefab: {fileID: 2637203000156603268, guid: b77c789d784963a41b40b235d41e2aaa,
+      type: 3}
+  - assetId: chair_cream
+    prefab: {fileID: 3480646576285410162, guid: 2386c5ece0e699644ad8c485ba32c1a0,
+      type: 3}
+  - assetId: chair_sage
+    prefab: {fileID: 2313927436632333120, guid: a94832f297ced074da53b1e054f77430,
+      type: 3}
+  - assetId: chair_blue
+    prefab: {fileID: 404434379574952267, guid: 217ce2d5998869d47956c0981b5d9509, type: 3}
+  - assetId: bookshelf_oak
+    prefab: {fileID: 3854021104301659687, guid: 111b2b9f9612b4b48b364a0aa9732669,
+      type: 3}
+  - assetId: bookshelf_charcoal
+    prefab: {fileID: 2157466266378204436, guid: 8beae47f28b22854aabcfd87b8906b1b,
+      type: 3}
+  - assetId: plant_sage
+    prefab: {fileID: 3583318865715157486, guid: dd3aa01cb3d072b4bb247b04ff52831c,
+      type: 3}
+  - assetId: floor_lamp_warm
+    prefab: {fileID: 6533726645641002913, guid: 74e9f9451b139ba4aa59100b28cd2763,
+      type: 3}
+  - assetId: floor_lamp_charcoal
+    prefab: {fileID: 4419939096971619830, guid: 2480486cf8c7e9f4fbe2a1da57a4ef57,
+      type: 3}
+  - assetId: rug_cream
+    prefab: {fileID: 3017282838489864687, guid: d484a59b605b9bc4b89caf8848eec7f6,
+      type: 3}
+  - assetId: rug_blue
+    prefab: {fileID: 2350653621174189930, guid: 620c7afaa15ec7a488d56d9ab9f8bb96,
+      type: 3}

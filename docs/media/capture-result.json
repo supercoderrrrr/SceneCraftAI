@@ -1,0 +1,22 @@
+{
+    "capturedAt": "2026-10-03T08:38:42.7010246+00:00",
+    "editedCategory": "floor_lamp",
+    "width": 1600,
+    "height": 900,
+    "playbackFps": 15,
+    "rooms": 5,
+    "requestedObjects": 56,
+    "placedObjects": 55,
+    "auditNotes": 6,
+    "cloudRequests": 0,
+    "layoutClipFrames": 120,
+    "changedObjects": 38,
+    "layoutScore": 91.35614013671875,
+    "alternativeScore": 91.62999725341797,
+    "manualMoveAccepted": true,
+    "undoRestoredPosition": true,
+    "lockedPositionPreserved": true,
+    "alternativeChanged": true,
+    "languagePreservedScene": true,
+    "errors": []
+}
