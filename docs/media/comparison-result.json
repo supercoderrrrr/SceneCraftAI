@@ -1,0 +1,1117 @@
+{
+    "capturedAt": "2026-10-03T09:17:15.3143686+00:00",
+    "lockedId": "living_room_01_coffee_table_02",
+    "highlightedId": "kitchen_04_refrigerator_44",
+    "livingHighlightedId": "living_room_01_bookshelf_09",
+    "roomsUnchanged": true,
+    "inventoryUnchanged": true,
+    "lockPreserved": true,
+    "highlightedDistance": 3.703028917312622,
+    "livingHighlightedDistance": 2.208922863006592,
+    "beforeScore": 91.35614013671875,
+    "afterScore": 91.62999725341797,
+    "auditNotes": 6,
+    "errors": [],
+    "objects": [
+        {
+            "id": "living_room_01_coffee_table_02",
+            "roomId": "living_room_01",
+            "category": "coffee_table",
+            "locked": true,
+            "before": {
+                "x": 1.25,
+                "y": 0.0,
+                "z": 1.1765518188476563
+            },
+            "after": {
+                "x": 1.25,
+                "y": 0.0,
+                "z": 1.1765518188476563
+            },
+            "distance": 0.0,
+            "yawBefore": 0.0,
+            "yawAfter": 0.0,
+            "yawChange": 0.0
+        },
+        {
+            "id": "living_room_01_sofa_01",
+            "roomId": "living_room_01",
+            "category": "sofa",
+            "locked": false,
+            "before": {
+                "x": 1.25,
+                "y": 0.0,
+                "z": 2.626551866531372
+            },
+            "after": {
+                "x": 1.25,
+                "y": 0.0,
+                "z": 2.626055955886841
+            },
+            "distance": 0.00049591064453125,
+            "yawBefore": 0.0,
+            "yawAfter": 0.0,
+            "yawChange": 0.0
+        },
+        {
+            "id": "living_room_01_tv_stand_03",
+            "roomId": "living_room_01",
+            "category": "tv_stand",
+            "locked": false,
+            "before": {
+                "x": 1.815685510635376,
+                "y": 0.0,
+                "z": -2.304987668991089
+            },
+            "after": {
+                "x": 1.815685510635376,
+                "y": 0.0,
+                "z": -2.3047614097595217
+            },
+            "distance": 0.0002262592315673828,
+            "yawBefore": 180.0,
+            "yawAfter": 180.0,
+            "yawChange": 0.0
+        },
+        {
+            "id": "living_room_01_rug_04",
+            "roomId": "living_room_01",
+            "category": "rug",
+            "locked": false,
+            "before": {
+                "x": 1.25,
+                "y": 0.0,
+                "z": 1.1765518188476563
+            },
+            "after": {
+                "x": 1.25,
+                "y": 0.0,
+                "z": 1.1765518188476563
+            },
+            "distance": 0.0,
+            "yawBefore": 0.0,
+            "yawAfter": 0.0,
+            "yawChange": 0.0
+        },
+        {
+            "id": "living_room_01_plant_05",
+            "roomId": "living_room_01",
+            "category": "plant",
+            "locked": false,
+            "before": {
+                "x": 3.578214168548584,
+                "y": 0.0,
+                "z": -2.7782139778137209
+            },
+            "after": {
+                "x": -3.577361583709717,
+                "y": 0.0,
+                "z": -2.7773613929748537
+            },
+            "distance": 7.155575752258301,
+            "yawBefore": 0.0,
+            "yawAfter": 0.0,
+            "yawChange": 0.0
+        },
+        {
+            "id": "living_room_01_plant_06",
+            "roomId": "living_room_01",
+            "category": "plant",
+            "locked": false,
+            "before": {
+                "x": -3.5800585746765138,
+                "y": 0.0,
+                "z": -2.7800583839416506
+            },
+            "after": {
+                "x": -3.5792059898376467,
+                "y": 0.0,
+                "z": 2.779205799102783
+            },
+            "distance": 5.559264183044434,
+            "yawBefore": 0.0,
+            "yawAfter": 0.0,
+            "yawChange": 0.0
+        },
+        {
+            "id": "living_room_01_floor_lamp_07",
+            "roomId": "living_room_01",
+            "category": "floor_lamp",
+            "locked": false,
+            "before": {
+                "x": 2.7158122062683107,
+                "y": 0.0,
+                "z": 2.626551866531372
+            },
+            "after": {
+                "x": 2.7172513008117677,
+                "y": 0.0,
+                "z": 2.626055955886841
+            },
+            "distance": 0.0015221433714032174,
+            "yawBefore": 0.0,
+            "yawAfter": 0.0,
+            "yawChange": 0.0
+        },
+        {
+            "id": "living_room_01_chair_08",
+            "roomId": "living_room_01",
+            "category": "chair",
+            "locked": false,
+            "before": {
+                "x": 3.3861074447631838,
+                "y": 0.0,
+                "z": 2.626551866531372
+            },
+            "after": {
+                "x": 3.3876166343688967,
+                "y": 0.0,
+                "z": 2.626055955886841
+            },
+            "distance": 0.001588578219525516,
+            "yawBefore": 0.0,
+            "yawAfter": 0.0,
+            "yawChange": 0.0
+        },
+        {
+            "id": "living_room_01_bookshelf_09",
+            "roomId": "living_room_01",
+            "category": "bookshelf",
+            "locked": false,
+            "before": {
+                "x": -3.1250405311584474,
+                "y": 0.0,
+                "z": 2.8864424228668215
+            },
+            "after": {
+                "x": -3.686248540878296,
+                "y": 0.0,
+                "z": 0.75
+            },
+            "distance": 2.208922863006592,
+            "yawBefore": 0.0,
+            "yawAfter": -90.0,
+            "yawChange": 90.0
+        },
+        {
+            "id": "living_room_01_ceiling_light_10",
+            "roomId": "living_room_01",
+            "category": "ceiling_light",
+            "locked": false,
+            "before": {
+                "x": 0.0,
+                "y": 2.734178304672241,
+                "z": 0.0
+            },
+            "after": {
+                "x": 0.0,
+                "y": 2.7338333129882814,
+                "z": 0.0
+            },
+            "distance": 0.00034499168395996094,
+            "yawBefore": 0.0,
+            "yawAfter": 0.0,
+            "yawChange": 0.0
+        },
+        {
+            "id": "living_room_01_flower_pot_11",
+            "roomId": "living_room_01",
+            "category": "flower_pot",
+            "locked": false,
+            "before": {
+                "x": 1.5008533000946046,
+                "y": 0.4058489203453064,
+                "z": 1.1765518188476563
+            },
+            "after": {
+                "x": 1.5011332035064698,
+                "y": 0.40630167722702029,
+                "z": 1.1765518188476563
+            },
+            "distance": 0.0005322919460013509,
+            "yawBefore": 0.0,
+            "yawAfter": 0.0,
+            "yawChange": 0.0
+        },
+        {
+            "id": "living_room_01_decor_bowl_12",
+            "roomId": "living_room_01",
+            "category": "decor_bowl",
+            "locked": false,
+            "before": {
+                "x": 0.9991466999053955,
+                "y": 0.4058489203453064,
+                "z": 1.1765518188476563
+            },
+            "after": {
+                "x": 0.998866856098175,
+                "y": 0.40630167722702029,
+                "z": 1.1765518188476563
+            },
+            "distance": 0.0005322606302797794,
+            "yawBefore": 0.0,
+            "yawAfter": 0.0,
+            "yawChange": 0.0
+        },
+        {
+            "id": "living_room_01_wall_art_13",
+            "roomId": "living_room_01",
+            "category": "wall_art",
+            "locked": false,
+            "before": {
+                "x": 1.25,
+                "y": 1.7689999341964722,
+                "z": 3.0524790287017824
+            },
+            "after": {
+                "x": 1.25,
+                "y": 1.7689999341964722,
+                "z": 3.052454948425293
+            },
+            "distance": 0.000024080276489257813,
+            "yawBefore": 0.0,
+            "yawAfter": 0.0,
+            "yawChange": 0.0
+        },
+        {
+            "id": "master_bedroom_02_bed_14",
+            "roomId": "master_bedroom_02",
+            "category": "bed",
+            "locked": false,
+            "before": {
+                "x": -3.195317268371582,
+                "y": 0.0,
+                "z": 5.800000190734863
+            },
+            "after": {
+                "x": -3.177920341491699,
+                "y": 0.0,
+                "z": 5.800000190734863
+            },
+            "distance": 0.017396926879882814,
+            "yawBefore": -90.0,
+            "yawAfter": -90.0,
+            "yawChange": 0.0
+        },
+        {
+            "id": "master_bedroom_02_nightstand_15",
+            "roomId": "master_bedroom_02",
+            "category": "nightstand",
+            "locked": false,
+            "before": {
+                "x": -3.530093193054199,
+                "y": 0.0,
+                "z": 4.424365043640137
+            },
+            "after": {
+                "x": -3.5126962661743166,
+                "y": 0.0,
+                "z": 4.396934509277344
+            },
+            "distance": 0.03248210623860359,
+            "yawBefore": -90.0,
+            "yawAfter": -90.0,
+            "yawChange": 0.0
+        },
+        {
+            "id": "master_bedroom_02_nightstand_16",
+            "roomId": "master_bedroom_02",
+            "category": "nightstand",
+            "locked": false,
+            "before": {
+                "x": -3.160541534423828,
+                "y": 0.0,
+                "z": 7.175076007843018
+            },
+            "after": {
+                "x": -3.1431446075439455,
+                "y": 0.0,
+                "z": 7.212118148803711
+            },
+            "distance": 0.04092399403452873,
+            "yawBefore": -90.0,
+            "yawAfter": -90.0,
+            "yawChange": 0.0
+        },
+        {
+            "id": "master_bedroom_02_wardrobe_17",
+            "roomId": "master_bedroom_02",
+            "category": "wardrobe",
+            "locked": false,
+            "before": {
+                "x": 2.0377402305603029,
+                "y": 0.0,
+                "z": 5.800000190734863
+            },
+            "after": {
+                "x": 2.0459256172180177,
+                "y": 0.0,
+                "z": 5.800000190734863
+            },
+            "distance": 0.008185386657714844,
+            "yawBefore": 90.0,
+            "yawAfter": 90.0,
+            "yawChange": 0.0
+        },
+        {
+            "id": "master_bedroom_02_rug_18",
+            "roomId": "master_bedroom_02",
+            "category": "rug",
+            "locked": false,
+            "before": {
+                "x": -0.8500000238418579,
+                "y": 0.0,
+                "z": 5.800000190734863
+            },
+            "after": {
+                "x": -0.8500000238418579,
+                "y": 0.0,
+                "z": 5.800000190734863
+            },
+            "distance": 0.0,
+            "yawBefore": 0.0,
+            "yawAfter": 0.0,
+            "yawChange": 0.0
+        },
+        {
+            "id": "master_bedroom_02_ceiling_light_19",
+            "roomId": "master_bedroom_02",
+            "category": "ceiling_light",
+            "locked": false,
+            "before": {
+                "x": -0.8500000238418579,
+                "y": 2.5414609909057619,
+                "z": 5.800000190734863
+            },
+            "after": {
+                "x": -0.8500000238418579,
+                "y": 2.5371806621551515,
+                "z": 5.800000190734863
+            },
+            "distance": 0.0042803287506103519,
+            "yawBefore": 0.0,
+            "yawAfter": 0.0,
+            "yawChange": 0.0
+        },
+        {
+            "id": "master_bedroom_02_table_lamp_20",
+            "roomId": "master_bedroom_02",
+            "category": "table_lamp",
+            "locked": false,
+            "before": {
+                "x": -3.530093193054199,
+                "y": 0.49460887908935549,
+                "z": 4.424365043640137
+            },
+            "after": {
+                "x": -3.5126962661743166,
+                "y": 0.5072100162506104,
+                "z": 4.396934509277344
+            },
+            "distance": 0.034840721637010577,
+            "yawBefore": -90.0,
+            "yawAfter": -90.0,
+            "yawChange": 0.0
+        },
+        {
+            "id": "master_bedroom_02_clothes_rack_21",
+            "roomId": "master_bedroom_02",
+            "category": "clothes_rack",
+            "locked": false,
+            "before": {
+                "x": -3.806319236755371,
+                "y": 0.0,
+                "z": 7.550000190734863
+            },
+            "after": {
+                "x": 0.6499999761581421,
+                "y": 0.0,
+                "z": 8.241748809814454
+            },
+            "distance": 4.5096893310546879,
+            "yawBefore": -90.0,
+            "yawAfter": 0.0,
+            "yawChange": 90.0
+        },
+        {
+            "id": "master_bedroom_02_fan_22",
+            "roomId": "master_bedroom_02",
+            "category": "fan",
+            "locked": false,
+            "before": {
+                "x": 2.081570625305176,
+                "y": 0.0,
+                "z": 8.231571197509766
+            },
+            "after": {
+                "x": 2.0745296478271486,
+                "y": 0.0,
+                "z": 3.3754703998565676
+            },
+            "distance": 4.856106281280518,
+            "yawBefore": 0.0,
+            "yawAfter": 0.0,
+            "yawChange": 0.0
+        },
+        {
+            "id": "master_bedroom_02_air_conditioner_23",
+            "roomId": "master_bedroom_02",
+            "category": "air_conditioner",
+            "locked": false,
+            "before": {
+                "x": 2.1779589653015138,
+                "y": 2.592888355255127,
+                "z": 5.800000190734863
+            },
+            "after": {
+                "x": -3.883301258087158,
+                "y": 2.6022298336029054,
+                "z": 5.800000190734863
+            },
+            "distance": 6.061267375946045,
+            "yawBefore": 90.0,
+            "yawAfter": -90.0,
+            "yawChange": 180.0
+        },
+        {
+            "id": "master_bedroom_02_plant_24",
+            "roomId": "master_bedroom_02",
+            "category": "plant",
+            "locked": false,
+            "before": {
+                "x": 1.4106053113937379,
+                "y": 0.0,
+                "z": 8.160605430603028
+            },
+            "after": {
+                "x": 2.057802677154541,
+                "y": 0.0,
+                "z": 3.9921975135803224
+            },
+            "distance": 4.218351364135742,
+            "yawBefore": 0.0,
+            "yawAfter": 0.0,
+            "yawChange": 0.0
+        },
+        {
+            "id": "master_bedroom_02_table_lamp_25",
+            "roomId": "master_bedroom_02",
+            "category": "table_lamp",
+            "locked": false,
+            "before": {
+                "x": -3.160541534423828,
+                "y": 0.49339625239372256,
+                "z": 7.175076007843018
+            },
+            "after": {
+                "x": -3.1431446075439455,
+                "y": 0.526823878288269,
+                "z": 7.212118148803711
+            },
+            "distance": 0.052841078490018848,
+            "yawBefore": -90.0,
+            "yawAfter": -90.0,
+            "yawChange": 0.0
+        },
+        {
+            "id": "secondary_bedroom_03_bed_27",
+            "roomId": "secondary_bedroom_03",
+            "category": "bed",
+            "locked": false,
+            "before": {
+                "x": 8.839339256286621,
+                "y": 0.0,
+                "z": -0.3499999940395355
+            },
+            "after": {
+                "x": 8.838651657104493,
+                "y": 0.0,
+                "z": -0.3499999940395355
+            },
+            "distance": 0.0006875991821289063,
+            "yawBefore": 90.0,
+            "yawAfter": 90.0,
+            "yawChange": 0.0
+        },
+        {
+            "id": "secondary_bedroom_03_nightstand_28",
+            "roomId": "secondary_bedroom_03",
+            "category": "nightstand",
+            "locked": false,
+            "before": {
+                "x": 9.174115180969239,
+                "y": 0.0,
+                "z": 1.0014219284057618
+            },
+            "after": {
+                "x": 9.17342758178711,
+                "y": 0.0,
+                "z": 1.0030122995376588
+            },
+            "distance": 0.0017326491652056575,
+            "yawBefore": 90.0,
+            "yawAfter": 90.0,
+            "yawChange": 0.0
+        },
+        {
+            "id": "secondary_bedroom_03_wardrobe_29",
+            "roomId": "secondary_bedroom_03",
+            "category": "wardrobe",
+            "locked": false,
+            "before": {
+                "x": 5.60794734954834,
+                "y": 0.0,
+                "z": -0.3499999940395355
+            },
+            "after": {
+                "x": 5.6083269119262699,
+                "y": 0.0,
+                "z": -0.3499999940395355
+            },
+            "distance": 0.0003795623779296875,
+            "yawBefore": -90.0,
+            "yawAfter": -90.0,
+            "yawChange": 0.0
+        },
+        {
+            "id": "secondary_bedroom_03_rug_30",
+            "roomId": "secondary_bedroom_03",
+            "category": "rug",
+            "locked": false,
+            "before": {
+                "x": 6.650000095367432,
+                "y": 0.0,
+                "z": -0.3499999940395355
+            },
+            "after": {
+                "x": 6.650000095367432,
+                "y": 0.0,
+                "z": -0.3499999940395355
+            },
+            "distance": 0.0,
+            "yawBefore": 0.0,
+            "yawAfter": 0.0,
+            "yawChange": 0.0
+        },
+        {
+            "id": "secondary_bedroom_03_ceiling_light_31",
+            "roomId": "secondary_bedroom_03",
+            "category": "ceiling_light",
+            "locked": false,
+            "before": {
+                "x": 6.650000095367432,
+                "y": 2.5297112464904787,
+                "z": -0.3499999940395355
+            },
+            "after": {
+                "x": 6.650000095367432,
+                "y": 2.529292345046997,
+                "z": -0.3499999940395355
+            },
+            "distance": 0.0004189014434814453,
+            "yawBefore": 0.0,
+            "yawAfter": 0.0,
+            "yawChange": 0.0
+        },
+        {
+            "id": "secondary_bedroom_03_table_lamp_32",
+            "roomId": "secondary_bedroom_03",
+            "category": "table_lamp",
+            "locked": false,
+            "before": {
+                "x": 9.174115180969239,
+                "y": 0.5201887488365173,
+                "z": 1.0014219284057618
+            },
+            "after": {
+                "x": 9.17342758178711,
+                "y": 0.5208694338798523,
+                "z": 1.0030122995376588
+            },
+            "distance": 0.0018615598091855646,
+            "yawBefore": 90.0,
+            "yawAfter": 90.0,
+            "yawChange": 0.0
+        },
+        {
+            "id": "secondary_bedroom_03_clothes_rack_33",
+            "roomId": "secondary_bedroom_03",
+            "category": "clothes_rack",
+            "locked": false,
+            "before": {
+                "x": 5.400000095367432,
+                "y": 0.0,
+                "z": 1.7326534986495972
+            },
+            "after": {
+                "x": 9.132352828979493,
+                "y": 0.0,
+                "z": -2.0999999046325685
+            },
+            "distance": 5.349737167358398,
+            "yawBefore": 0.0,
+            "yawAfter": 90.0,
+            "yawChange": 90.0
+        },
+        {
+            "id": "secondary_bedroom_03_fan_34",
+            "roomId": "secondary_bedroom_03",
+            "category": "fan",
+            "locked": false,
+            "before": {
+                "x": 4.164868354797363,
+                "y": 0.0,
+                "z": 1.735131859779358
+            },
+            "after": {
+                "x": 9.134818077087403,
+                "y": 0.0,
+                "z": 1.734817624092102
+            },
+            "distance": 4.969949722290039,
+            "yawBefore": 0.0,
+            "yawAfter": 0.0,
+            "yawChange": 0.0
+        },
+        {
+            "id": "secondary_bedroom_03_air_conditioner_35",
+            "roomId": "secondary_bedroom_03",
+            "category": "air_conditioner",
+            "locked": false,
+            "before": {
+                "x": 9.233736991882325,
+                "y": 2.602991819381714,
+                "z": -0.3499999940395355
+            },
+            "after": {
+                "x": 9.233553886413575,
+                "y": 2.6026713848114015,
+                "z": -0.3499999940395355
+            },
+            "distance": 0.00036906087188981473,
+            "yawBefore": 90.0,
+            "yawAfter": 90.0,
+            "yawChange": 0.0
+        },
+        {
+            "id": "secondary_bedroom_03_plant_36",
+            "roomId": "secondary_bedroom_03",
+            "category": "plant",
+            "locked": false,
+            "before": {
+                "x": 4.256638526916504,
+                "y": 0.0,
+                "z": 1.0433616638183594
+            },
+            "after": {
+                "x": 8.442326545715332,
+                "y": 0.0,
+                "z": 1.6423264741897584
+            },
+            "distance": 4.228326320648193,
+            "yawBefore": 0.0,
+            "yawAfter": 0.0,
+            "yawChange": 0.0
+        },
+        {
+            "id": "secondary_bedroom_03_desk_37",
+            "roomId": "secondary_bedroom_03",
+            "category": "desk",
+            "locked": false,
+            "before": {
+                "x": 6.650000095367432,
+                "y": 0.0,
+                "z": -1.6501264572143555
+            },
+            "after": {
+                "x": 6.650000095367432,
+                "y": 0.0,
+                "z": -1.6497009992599488
+            },
+            "distance": 0.0004254579544067383,
+            "yawBefore": 0.0,
+            "yawAfter": 0.0,
+            "yawChange": 0.0
+        },
+        {
+            "id": "secondary_bedroom_03_chair_38",
+            "roomId": "secondary_bedroom_03",
+            "category": "chair",
+            "locked": false,
+            "before": {
+                "x": 7.943431377410889,
+                "y": 0.0,
+                "z": -1.9643696546554566
+            },
+            "after": {
+                "x": 7.943431377410889,
+                "y": 0.0,
+                "z": -1.9639443159103394
+            },
+            "distance": 0.0004253387451171875,
+            "yawBefore": 180.0,
+            "yawAfter": 180.0,
+            "yawChange": 0.0
+        },
+        {
+            "id": "secondary_bedroom_03_computer_set_39",
+            "roomId": "secondary_bedroom_03",
+            "category": "computer_set",
+            "locked": false,
+            "before": {
+                "x": 6.930000305175781,
+                "y": 0.7480117678642273,
+                "z": -1.6501264572143555
+            },
+            "after": {
+                "x": 6.930000305175781,
+                "y": 0.7490065693855286,
+                "z": -1.6497009992599488
+            },
+            "distance": 0.0010819633025676013,
+            "yawBefore": 0.0,
+            "yawAfter": 0.0,
+            "yawChange": 0.0
+        },
+        {
+            "id": "secondary_bedroom_03_books_40",
+            "roomId": "secondary_bedroom_03",
+            "category": "books",
+            "locked": false,
+            "before": {
+                "x": 6.293463230133057,
+                "y": 0.7480117678642273,
+                "z": -1.4653505086898804
+            },
+            "after": {
+                "x": 6.293463230133057,
+                "y": 0.7490065693855286,
+                "z": -1.4649250507354737
+            },
+            "distance": 0.0010819633025676013,
+            "yawBefore": 0.0,
+            "yawAfter": 0.0,
+            "yawChange": 0.0
+        },
+        {
+            "id": "secondary_bedroom_03_bookshelf_41",
+            "roomId": "secondary_bedroom_03",
+            "category": "bookshelf",
+            "locked": false,
+            "before": {
+                "x": 4.103140830993652,
+                "y": 0.0,
+                "z": -1.850000023841858
+            },
+            "after": {
+                "x": 4.645264625549316,
+                "y": 0.0,
+                "z": 1.7966235876083375
+            },
+            "distance": 3.6867005825042726,
+            "yawBefore": -90.0,
+            "yawAfter": 0.0,
+            "yawChange": 90.0
+        },
+        {
+            "id": "kitchen_04_kitchen_counter_42",
+            "roomId": "kitchen_04",
+            "category": "kitchen_counter",
+            "locked": false,
+            "before": {
+                "x": -8.739036560058594,
+                "y": 0.0,
+                "z": -0.75
+            },
+            "after": {
+                "x": -8.771530151367188,
+                "y": 0.0,
+                "z": -0.75
+            },
+            "distance": 0.03249359130859375,
+            "yawBefore": -90.0,
+            "yawAfter": -90.0,
+            "yawChange": 0.0
+        },
+        {
+            "id": "kitchen_04_kitchen_counter_43",
+            "roomId": "kitchen_04",
+            "category": "kitchen_counter",
+            "locked": false,
+            "before": {
+                "x": -6.5,
+                "y": 0.0,
+                "z": -2.5621702671051027
+            },
+            "after": {
+                "x": -6.5,
+                "y": 0.0,
+                "z": -2.559459686279297
+            },
+            "distance": 0.002710580825805664,
+            "yawBefore": 180.0,
+            "yawAfter": 180.0,
+            "yawChange": 0.0
+        },
+        {
+            "id": "kitchen_04_refrigerator_44",
+            "roomId": "kitchen_04",
+            "category": "refrigerator",
+            "locked": false,
+            "before": {
+                "x": -8.695114135742188,
+                "y": 0.0,
+                "z": 0.75
+            },
+            "after": {
+                "x": -5.0,
+                "y": 0.0,
+                "z": 0.9919801950454712
+            },
+            "distance": 3.703028917312622,
+            "yawBefore": -90.0,
+            "yawAfter": 0.0,
+            "yawChange": 90.0
+        },
+        {
+            "id": "kitchen_04_stove_45",
+            "roomId": "kitchen_04",
+            "category": "stove",
+            "locked": false,
+            "before": {
+                "x": -4.249238014221191,
+                "y": 0.0,
+                "z": 0.5
+            },
+            "after": {
+                "x": -8.748051643371582,
+                "y": 0.0,
+                "z": 0.75
+            },
+            "distance": 4.505754470825195,
+            "yawBefore": 90.0,
+            "yawAfter": -90.0,
+            "yawChange": 180.0
+        },
+        {
+            "id": "kitchen_04_dining_table_46",
+            "roomId": "kitchen_04",
+            "category": "dining_table",
+            "locked": false,
+            "before": {
+                "x": -6.5,
+                "y": 0.0,
+                "z": -0.49503692984580996
+            },
+            "after": {
+                "x": -6.5,
+                "y": 0.0,
+                "z": -0.4518820345401764
+            },
+            "distance": 0.043154895305633548,
+            "yawBefore": 0.0,
+            "yawAfter": 0.0,
+            "yawChange": 0.0
+        },
+        {
+            "id": "kitchen_04_chair_47",
+            "roomId": "kitchen_04",
+            "category": "chair",
+            "locked": false,
+            "before": {
+                "x": -6.5,
+                "y": 0.0,
+                "z": -1.5012855529785157
+            },
+            "after": {
+                "x": -6.5,
+                "y": 0.0,
+                "z": -1.4174319505691529
+            },
+            "distance": 0.08385360240936279,
+            "yawBefore": 180.0,
+            "yawAfter": 180.0,
+            "yawChange": 0.0
+        },
+        {
+            "id": "kitchen_04_chair_48",
+            "roomId": "kitchen_04",
+            "category": "chair",
+            "locked": false,
+            "before": {
+                "x": -6.5,
+                "y": 0.0,
+                "z": 0.5221501588821411
+            },
+            "after": {
+                "x": -6.5,
+                "y": 0.0,
+                "z": 0.524606466293335
+            },
+            "distance": 0.0024563074111938478,
+            "yawBefore": 0.0,
+            "yawAfter": 0.0,
+            "yawChange": 0.0
+        },
+        {
+            "id": "kitchen_04_flower_pot_49",
+            "roomId": "kitchen_04",
+            "category": "flower_pot",
+            "locked": false,
+            "before": {
+                "x": -8.739036560058594,
+                "y": 0.9658941626548767,
+                "z": -0.75
+            },
+            "after": {
+                "x": -8.771530151367188,
+                "y": 0.8724765181541443,
+                "z": -0.75
+            },
+            "distance": 0.0989074781537056,
+            "yawBefore": -90.0,
+            "yawAfter": -90.0,
+            "yawChange": 0.0
+        },
+        {
+            "id": "kitchen_04_ceiling_light_50",
+            "roomId": "kitchen_04",
+            "category": "ceiling_light",
+            "locked": false,
+            "before": {
+                "x": -6.5,
+                "y": 2.5337979793548586,
+                "z": -0.75
+            },
+            "after": {
+                "x": -6.5,
+                "y": 2.531087636947632,
+                "z": -0.75
+            },
+            "distance": 0.0027103424072265627,
+            "yawBefore": 0.0,
+            "yawAfter": 0.0,
+            "yawChange": 0.0
+        },
+        {
+            "id": "bathroom_05_toilet_51",
+            "roomId": "bathroom_05",
+            "category": "toilet",
+            "locked": false,
+            "before": {
+                "x": 5.6087446212768559,
+                "y": 0.0,
+                "z": 3.1560001373291017
+            },
+            "after": {
+                "x": 7.564000129699707,
+                "y": 0.0,
+                "z": 4.846588134765625
+            },
+            "distance": 2.584784746170044,
+            "yawBefore": -90.0,
+            "yawAfter": 0.0,
+            "yawChange": 90.0
+        },
+        {
+            "id": "bathroom_05_sink_vanity_52",
+            "roomId": "bathroom_05",
+            "category": "sink_vanity",
+            "locked": false,
+            "before": {
+                "x": 6.348000526428223,
+                "y": 0.0,
+                "z": 5.102204322814941
+            },
+            "after": {
+                "x": 8.55783748626709,
+                "y": 0.0,
+                "z": 4.24399995803833
+            },
+            "distance": 2.370631694793701,
+            "yawBefore": 0.0,
+            "yawAfter": 90.0,
+            "yawChange": 90.0
+        },
+        {
+            "id": "bathroom_05_shower_53",
+            "roomId": "bathroom_05",
+            "category": "shower",
+            "locked": false,
+            "before": {
+                "x": 8.296015739440918,
+                "y": 0.0,
+                "z": 2.5599849224090578
+            },
+            "after": {
+                "x": 5.616672515869141,
+                "y": 0.0,
+                "z": 2.5606722831726076
+            },
+            "distance": 2.6793432235717775,
+            "yawBefore": 0.0,
+            "yawAfter": 0.0,
+            "yawChange": 0.0
+        },
+        {
+            "id": "bathroom_05_laundry_basket_54",
+            "roomId": "bathroom_05",
+            "category": "laundry_basket",
+            "locked": false,
+            "before": {
+                "x": 8.579975128173829,
+                "y": 0.0,
+                "z": 3.476025342941284
+            },
+            "after": {
+                "x": 5.332365989685059,
+                "y": 0.0,
+                "z": 3.476365566253662
+            },
+            "distance": 3.2476091384887697,
+            "yawBefore": 0.0,
+            "yawAfter": 0.0,
+            "yawChange": 0.0
+        },
+        {
+            "id": "bathroom_05_flower_pot_55",
+            "roomId": "bathroom_05",
+            "category": "flower_pot",
+            "locked": false,
+            "before": {
+                "x": 6.348000526428223,
+                "y": 0.8963293433189392,
+                "z": 5.102204322814941
+            },
+            "after": {
+                "x": 8.55783748626709,
+                "y": 0.8975335955619812,
+                "z": 4.24399995803833
+            },
+            "distance": 2.3706319332122804,
+            "yawBefore": 0.0,
+            "yawAfter": 90.0,
+            "yawChange": 90.0
+        },
+        {
+            "id": "bathroom_05_ceiling_light_56",
+            "roomId": "bathroom_05",
+            "category": "ceiling_light",
+            "locked": false,
+            "before": {
+                "x": 6.956000328063965,
+                "y": 2.524301052093506,
+                "z": 3.700000047683716
+            },
+            "after": {
+                "x": 6.956000328063965,
+                "y": 2.5238821506500246,
+                "z": 3.700000047683716
+            },
+            "distance": 0.0004189014434814453,
+            "yawBefore": 0.0,
+            "yawAfter": 0.0,
+            "yawChange": 0.0
+        }
+    ]
+}

@@ -28,15 +28,22 @@ namespace SceneCraftAI.Runtime
         private readonly List<string> errors = new List<string>();
         private readonly Report report = new Report();
         private int originalCaptureRate;
+        private bool compareOnly;
+        private readonly List<Texture2D> snapshots = new List<Texture2D>();
+        private const int RoomWidth = 720;
+        private const int RoomHeight = 560;
 
         [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.AfterSceneLoad)]
         private static void Install()
         {
             string[] args = Environment.GetCommandLineArgs();
             int index = Array.IndexOf(args, "-sceneCapture");
+            bool comparison = false;
+            if (index < 0) { index = Array.IndexOf(args, "-sceneCompare"); comparison = true; }
             if (index < 0 || index + 1 >= args.Length) return;
             SceneCapture capture = new GameObject("PortfolioCapture").AddComponent<SceneCapture>();
             capture.output = Path.GetFullPath(args[index + 1]);
+            capture.compareOnly = comparison;
         }
 
         private void OnEnable() { Application.logMessageReceived += ReadLog; }
@@ -91,6 +98,7 @@ namespace SceneCraftAI.Runtime
             report.layoutScore = controller.CurrentQuality.Score;
             report.auditNotes = controller.CurrentAudit.Issues.Count;
             report.cloudRequests = 0;
+            if (compareOnly) { yield return CompareLayout(); yield break; }
             HomeView(35f);
             selectionPanel.gameObject.SetActive(false);
             caption.text = "ROOM-FIRST DESIGN\n5 connected rooms from a single short brief";
@@ -214,6 +222,259 @@ namespace SceneCraftAI.Runtime
             yield return null;
         }
 
+        private IEnumerator CompareLayout()
+        {
+            SceneObjectView table = FindView("coffee_table");
+            if (table == null) { Fail("Coffee table is missing"); yield break; }
+            controller.ToggleLock(table);
+            string lockedId = table.Spec.id;
+            SceneSpec before = SceneSpecJson.FromJson(SceneSpecJson.ToJson(controller.CurrentSpec));
+            RoomSpec living = before.rooms.Find(room => room.id == table.Spec.roomId);
+            RoomSpec kitchen = before.rooms.Find(room => room.type == "kitchen");
+            if (living == null || kitchen == null) { Fail("Comparison rooms are missing"); yield break; }
+            canvas.enabled = false;
+            Texture2D livingBefore = SnapshotRoom(living);
+            Texture2D kitchenBefore = SnapshotRoom(kitchen);
+            controller.NextLayout();
+            yield return WaitForBuild();
+            if (controller.IsBusy) { Fail("Alternative layout timed out"); yield break; }
+            SceneSpec after = controller.CurrentSpec;
+            Comparison result = new Comparison { capturedAt = DateTimeOffset.UtcNow.ToString("o"), lockedId = lockedId };
+            result.roomsUnchanged = before.rooms.Count == after.rooms.Count;
+            foreach (RoomSpec room in before.rooms)
+            {
+                RoomSpec current = after.rooms.Find(item => item.id == room.id);
+                result.roomsUnchanged &= current != null && JsonUtility.ToJson(room) == JsonUtility.ToJson(current);
+            }
+            result.inventoryUnchanged = before.objects.Count == after.objects.Count;
+            foreach (SceneObjectRequest request in before.objects)
+                result.inventoryUnchanged &= after.objects.Exists(item => item.id == request.id && item.category == request.category && item.roomId == request.roomId);
+            foreach (PlacedObjectSpec current in after.placements)
+            {
+                PlacedObjectSpec previous = before.placements.Find(item => item.id == current.id);
+                if (previous == null) continue;
+                result.objects.Add(new Change
+                {
+                    id = current.id, roomId = current.roomId, category = current.category, locked = current.locked,
+                    before = previous.position, after = current.position,
+                    distance = Vector3.Distance(previous.position, current.position),
+                    yawBefore = previous.rotationY, yawAfter = current.rotationY,
+                    yawChange = Mathf.Abs(Mathf.DeltaAngle(previous.rotationY, current.rotationY))
+                });
+            }
+            Change locked = result.objects.Find(item => item.id == result.lockedId);
+            result.lockPreserved = locked != null && locked.locked && locked.distance < 0.001f && locked.yawChange < 0.01f;
+            Change moved = result.objects.Find(item => item.roomId == kitchen.id && item.category == "refrigerator");
+            if (moved == null || moved.distance < 0.25f) { Fail("The refrigerator did not move enough for an honest comparison"); yield break; }
+            result.highlightedId = moved.id;
+            result.highlightedDistance = moved.distance;
+            Change bookshelf = result.objects.Find(item => item.roomId == living.id && item.category == "bookshelf");
+            if (bookshelf == null || bookshelf.distance < 0.25f) { Fail("The bookshelf did not move enough for an honest comparison"); yield break; }
+            result.livingHighlightedId = bookshelf.id;
+            result.livingHighlightedDistance = bookshelf.distance;
+            result.beforeScore = report.layoutScore;
+            result.afterScore = controller.CurrentQuality.Score;
+            result.auditNotes = controller.CurrentAudit.Issues.Count;
+            result.errors = errors.ToArray();
+            Texture2D livingAfter = SnapshotRoom(living);
+            Texture2D kitchenAfter = SnapshotRoom(kitchen);
+            Canvas board = CreateBoard();
+            DrawComparison(board.transform, living, livingBefore, livingAfter, locked, bookshelf, true, result.auditNotes);
+            Capture("layout-lock-comparison.png");
+            for (int frame = 0; frame < 60; frame++) { Capture("comparison-" + frame.ToString("0000") + ".png"); yield return null; }
+            ClearBoard(board.transform);
+            DrawComparison(board.transform, kitchen, kitchenBefore, kitchenAfter, moved, null, false, result.auditNotes);
+            Capture("layout-move-comparison.png");
+            for (int frame = 60; frame < 120; frame++) { Capture("comparison-" + frame.ToString("0000") + ".png"); yield return null; }
+            result.errors = errors.ToArray();
+            File.WriteAllText(Path.Combine(output, "comparison-result.json"), JsonUtility.ToJson(result, true));
+            bool passed = result.lockPreserved && result.roomsUnchanged && result.inventoryUnchanged && errors.Count == 0;
+            Debug.Log("SCENE_COMPARE: completed, checks passed " + passed + ", refrigerator moved " + moved.distance.ToString("0.00") + " m");
+            Application.Quit(passed ? 0 : 2);
+        }
+
+        private Texture2D SnapshotRoom(RoomSpec room)
+        {
+            Renderer[] renderers = controller.GetComponentsInChildren<Renderer>();
+            bool[] enabled = new bool[renderers.Length];
+            RenderTexture photo = new RenderTexture(RoomWidth, RoomHeight, 24);
+            RenderTexture previousTarget = cameraView.targetTexture;
+            RenderTexture previousActive = RenderTexture.active;
+            try
+            {
+                for (int i = 0; i < renderers.Length; i++)
+                {
+                    Renderer renderer = renderers[i];
+                    enabled[i] = renderer.enabled;
+                    SceneObjectView view = renderer.GetComponentInParent<SceneObjectView>();
+                    bool visible = view != null && view.Spec.roomId == room.id && view.Spec.category != "ceiling_light";
+                    if (view == null)
+                    {
+                        Transform ancestor = renderer.transform.parent;
+                        while (ancestor != null && ancestor != controller.transform && ancestor.name != "Room [" + room.id + "]") ancestor = ancestor.parent;
+                        visible = ancestor != null && ancestor != controller.transform &&
+                            !renderer.name.StartsWith("front_", StringComparison.Ordinal) && !renderer.name.StartsWith("left_", StringComparison.Ordinal);
+                    }
+                    renderer.enabled = enabled[i] && visible;
+                }
+                cameraView.orthographic = true;
+                cameraView.orthographicSize = Mathf.Max(room.width, room.depth) * 0.63f;
+                cameraView.aspect = (float)RoomWidth / RoomHeight;
+                Quaternion rotation = Quaternion.Euler(64f, 35f, 0f);
+                cameraView.transform.SetPositionAndRotation(room.center + Vector3.up * 0.65f - rotation * Vector3.forward * 24f, rotation);
+                cameraView.targetTexture = photo;
+                cameraView.Render();
+                RenderTexture.active = photo;
+                Texture2D snapshot = new Texture2D(RoomWidth, RoomHeight, TextureFormat.RGB24, false);
+                snapshot.ReadPixels(new Rect(0f, 0f, RoomWidth, RoomHeight), 0, 0);
+                snapshot.Apply();
+                snapshots.Add(snapshot);
+                return snapshot;
+            }
+            finally
+            {
+                for (int i = 0; i < renderers.Length; i++) if (renderers[i] != null) renderers[i].enabled = enabled[i];
+                cameraView.targetTexture = previousTarget;
+                RenderTexture.active = previousActive;
+                photo.Release();
+                Destroy(photo);
+            }
+        }
+
+        private Canvas CreateBoard()
+        {
+            GameObject root = new GameObject("ComparisonBoard", typeof(Canvas), typeof(CanvasScaler));
+            root.transform.SetParent(transform, false);
+            Canvas board = root.GetComponent<Canvas>();
+            board.renderMode = RenderMode.ScreenSpaceCamera;
+            board.worldCamera = cameraView;
+            board.planeDistance = 0.5f;
+            root.GetComponent<CanvasScaler>().uiScaleMode = CanvasScaler.ScaleMode.ConstantPixelSize;
+            cameraView.aspect = (float)Width / Height;
+            return board;
+        }
+
+        private void ClearBoard(Transform root)
+        {
+            for (int i = root.childCount - 1; i >= 0; i--)
+            {
+                root.GetChild(i).gameObject.SetActive(false);
+                Destroy(root.GetChild(i).gameObject);
+            }
+        }
+
+        private void DrawComparison(Transform root, RoomSpec room, Texture2D before, Texture2D after, Change change, Change secondary, bool locked, int auditNotes)
+        {
+            Color green = new Color(0.38f, 0.91f, 0.66f);
+            Color orange = new Color(1f, 0.72f, 0.35f);
+            Color white = new Color(0.9f, 0.94f, 0.97f);
+            Color muted = new Color(0.60f, 0.69f, 0.77f);
+            Box(root, Vector2.zero, new Vector2(Width, Height), new Color(0.035f, 0.055f, 0.075f));
+            Label(root, new Vector2(48f, 28f), new Vector2(1500f, 44f), locked ? "01  LOCK AN OBJECT, THEN TRY ANOTHER LAYOUT" : "02  UNLOCKED FURNITURE CAN CHANGE POSITION", 32, white);
+            Label(root, new Vector2(48f, 80f), new Vector2(1500f, 32f), locked ? "Living room: the coffee table stays in place" : "Kitchen: the refrigerator is replanned by the same operation", 24, muted);
+            for (int side = 0; side < 2; side++)
+            {
+                Vector2 origin = new Vector2(side == 0 ? 48f : 832f, 164f);
+                Box(root, origin - new Vector2(2f, 2f), new Vector2(RoomWidth + 4, RoomHeight + 4), new Color(0.19f, 0.25f, 0.3f));
+                GameObject imageRoot = new GameObject("RoomSnapshot", typeof(RectTransform), typeof(RawImage));
+                imageRoot.transform.SetParent(root, false);
+                Rect(imageRoot.GetComponent<RectTransform>(), origin, new Vector2(RoomWidth, RoomHeight));
+                imageRoot.GetComponent<RawImage>().texture = side == 0 ? before : after;
+                Label(root, origin - new Vector2(0f, 41f), new Vector2(RoomWidth, 34f), side == 0 ? "BEFORE" : "AFTER", 26, white);
+                Vector2 point = RoomPoint(room, side == 0 ? change.before : change.after);
+                Color color = locked ? green : orange;
+                Outline(root, origin + point - Vector2.one * 33f, Vector2.one * 66f, color);
+                if (!locked && side == 1)
+                {
+                    Vector2 oldPoint = RoomPoint(room, change.before);
+                    Outline(root, origin + oldPoint - Vector2.one * 29f, Vector2.one * 58f, muted);
+                    Arrow(root, origin + oldPoint, origin + point, color);
+                }
+                Vector2 tag = new Vector2(Mathf.Clamp(point.x - 130f, 8f, RoomWidth - 270f), Mathf.Clamp(point.y + 47f, 8f, RoomHeight - 65f));
+                Box(root, origin + tag, new Vector2(260f, 56f), new Color(0.035f, 0.055f, 0.075f, 0.95f));
+                Label(root, origin + tag + new Vector2(10f, 4f), new Vector2(245f, 50f), locked ? "LOCKED COFFEE TABLE\nPosition + rotation kept" : (side == 0 ? "REFRIGERATOR\nOriginal position" : "REFRIGERATOR\nMoved " + change.distance.ToString("0.00") + " m"), 19, color);
+                if (secondary != null)
+                {
+                    Vector2 other = RoomPoint(room, side == 0 ? secondary.before : secondary.after);
+                    Outline(root, origin + other - Vector2.one * 33f, Vector2.one * 66f, orange);
+                    if (side == 1) Arrow(root, origin + RoomPoint(room, secondary.before), origin + other, orange);
+                    Vector2 otherTag = new Vector2(Mathf.Clamp(other.x - 130f, 8f, RoomWidth - 270f), Mathf.Clamp(other.y + 47f, 8f, RoomHeight - 65f));
+                    Box(root, origin + otherTag, new Vector2(260f, 56f), new Color(0.035f, 0.055f, 0.075f, 0.95f));
+                    Label(root, origin + otherTag + new Vector2(10f, 4f), new Vector2(245f, 50f), side == 0 ? "BOOKSHELF\nOriginal position" : "BOOKSHELF\nMoved " + secondary.distance.ToString("0.00") + " m / " + secondary.yawChange.ToString("0") + " deg", 19, orange);
+                }
+            }
+            string movement = locked ? "Green table: " + change.distance.ToString("0.00") + " m / " + change.yawChange.ToString("0") + " deg    Orange bookshelf: " + secondary.distance.ToString("0.00") + " m / " + secondary.yawChange.ToString("0") + " deg" : "Orange arrow: original position to new position    Distance: " + change.distance.ToString("0.00") + " m";
+            Label(root, new Vector2(48f, 752f), new Vector2(1500f, 34f), movement, 24, locked ? green : orange);
+            Label(root, new Vector2(48f, 801f), new Vector2(1500f, 30f), "Same floor plan, same inventory, same camera    No furniture was manually moved for this comparison", 21, white);
+            Label(root, new Vector2(48f, 846f), new Vector2(1500f, 28f), "Room cutaway: other rooms, ceiling lights and camera-facing walls hidden    " + auditNotes + " layout audit notes remain", 18, muted);
+        }
+
+        private Vector2 RoomPoint(RoomSpec room, Vector3 world)
+        {
+            float previousAspect = cameraView.aspect;
+            cameraView.aspect = (float)RoomWidth / RoomHeight;
+            cameraView.orthographicSize = Mathf.Max(room.width, room.depth) * 0.63f;
+            Quaternion rotation = Quaternion.Euler(64f, 35f, 0f);
+            cameraView.transform.SetPositionAndRotation(room.center + Vector3.up * 0.65f - rotation * Vector3.forward * 24f, rotation);
+            Vector3 point = cameraView.WorldToViewportPoint(world + Vector3.up * 0.4f);
+            cameraView.aspect = previousAspect;
+            return new Vector2(point.x * RoomWidth, (1f - point.y) * RoomHeight);
+        }
+
+        private static void Rect(RectTransform rect, Vector2 position, Vector2 size)
+        {
+            rect.anchorMin = rect.anchorMax = new Vector2(0f, 1f);
+            rect.pivot = new Vector2(0f, 1f);
+            rect.anchoredPosition = new Vector2(position.x, -position.y);
+            rect.sizeDelta = size;
+        }
+
+        private static Image Box(Transform root, Vector2 position, Vector2 size, Color color)
+        {
+            GameObject item = new GameObject("Annotation", typeof(RectTransform), typeof(Image));
+            item.transform.SetParent(root, false);
+            Image image = item.GetComponent<Image>();
+            image.color = color;
+            image.raycastTarget = false;
+            Rect(image.rectTransform, position, size);
+            return image;
+        }
+
+        private void Label(Transform root, Vector2 position, Vector2 size, string value, int fontSize, Color color)
+        {
+            GameObject item = new GameObject("AnnotationLabel", typeof(RectTransform), typeof(Text));
+            item.transform.SetParent(root, false);
+            Text text = item.GetComponent<Text>();
+            text.font = caption.font;
+            text.fontSize = fontSize;
+            text.text = value;
+            text.color = color;
+            text.raycastTarget = false;
+            Rect(text.rectTransform, position, size);
+        }
+
+        private static void Outline(Transform root, Vector2 position, Vector2 size, Color color)
+        {
+            Box(root, position, new Vector2(size.x, 3f), color);
+            Box(root, position + new Vector2(0f, size.y), new Vector2(size.x, 3f), color);
+            Box(root, position, new Vector2(3f, size.y), color);
+            Box(root, position + new Vector2(size.x, 0f), new Vector2(3f, size.y + 3f), color);
+        }
+
+        private static void Arrow(Transform root, Vector2 from, Vector2 to, Color color)
+        {
+            Vector2 delta = to - from;
+            if (delta.magnitude < 1f) return;
+            float angle = -Mathf.Atan2(delta.y, delta.x) * Mathf.Rad2Deg;
+            Image shaft = Box(root, from, new Vector2(delta.magnitude, 4f), color);
+            shaft.rectTransform.localRotation = Quaternion.Euler(0f, 0f, angle);
+            foreach (float offset in new[] { -155f, 155f })
+            {
+                Image head = Box(root, to, new Vector2(22f, 4f), color);
+                head.rectTransform.localRotation = Quaternion.Euler(0f, 0f, angle + offset);
+            }
+        }
+
         private void HomeView(float yaw)
         {
             Bounds bounds = new Bounds(controller.CurrentSpec.rooms[0].center, Vector3.zero);
@@ -309,6 +570,27 @@ namespace SceneCraftAI.Runtime
             Time.captureFramerate = originalCaptureRate;
             if (target != null) { target.Release(); Destroy(target); }
             if (pixels != null) Destroy(pixels);
+            foreach (Texture2D snapshot in snapshots) if (snapshot != null) Destroy(snapshot);
+        }
+
+        [Serializable]
+        private sealed class Comparison
+        {
+            public string capturedAt, lockedId, highlightedId, livingHighlightedId;
+            public bool roomsUnchanged, inventoryUnchanged, lockPreserved;
+            public float highlightedDistance, livingHighlightedDistance, beforeScore, afterScore;
+            public int auditNotes;
+            public string[] errors;
+            public List<Change> objects = new List<Change>();
+        }
+
+        [Serializable]
+        private sealed class Change
+        {
+            public string id, roomId, category;
+            public bool locked;
+            public Vector3 before, after;
+            public float distance, yawBefore, yawAfter, yawChange;
         }
 
         [Serializable]

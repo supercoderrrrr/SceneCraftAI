@@ -32,11 +32,17 @@ The whole apartment has a staggered multi-wing outline. Individual rooms are sti
 
 Move furniture within the placement constraints, undo the edit, then lock an object while searching for a different layout. The recordings invoke the same runtime operations as the controls; they are automated captures, not manual mouse recordings.
 
-![Locked furniture and an alternative layout](docs/media/scenecraft-layout.gif)
+![Annotated close-up comparison of locked furniture and actual placement changes](docs/media/scenecraft-layout-comparison.gif)
 
-| Before | Alternative, with the coffee table locked |
-| --- | --- |
-| ![Original layout](docs/media/layout-before.png) | ![Alternative layout](docs/media/layout-after.png) |
+**Keep the coffee table, move the bookshelf.** Both sides use the same living-room camera. Green marks the locked table: **0.00 m / 0°** change. Orange marks the unlocked bookshelf: **2.21 m** movement and **90°** rotation after **Try another layout**.
+
+![Same living room with a fixed green coffee table and a moved orange bookshelf](docs/media/layout-lock-comparison.png)
+
+**Replan unlocked kitchen furniture.** The refrigerator moves **3.70 m** in the same operation. Its old and new positions and the orange arrow make the change visible without comparing tiny whole-apartment screenshots.
+
+![Same kitchen with the refrigerator's measured position change and arrow](docs/media/layout-move-comparison.png)
+
+No furniture was manually moved to create these differences. This operation changes furniture placement, not the floor plan or requested inventory. These are annotated before/after comparisons, not animated motion between the two positions. Other rooms, ceiling lights and camera-facing walls are hidden only for the close-up cutaway; the generated geometry and furniture coordinates are unchanged. [Comparison measurements](docs/media/comparison-result.json) preserve the actual coordinates and checks.
 
 [Furniture-editing recording](docs/media/scenecraft-edit.mp4) · [Alternative-layout recording](docs/media/scenecraft-layout.mp4)
 
@@ -150,7 +156,11 @@ No blanket open-source license is granted to the original project code by this p
 
 ### 功能展示
 
-![锁定物件并重新布局](docs/media/scenecraft-layout.gif)
+![锁定茶几与家具重新摆放的近景标注对比](docs/media/scenecraft-layout-comparison.gif)
+
+同一客厅、同一镜头：绿色茶几保持位置与朝向不变（0.00 米 / 0°），橙色书架移动 2.21 米并转动 90°。同一次换布局中，厨房冰箱移动 3.70 米，橙色箭头连接原位置与新位置。上方完整近景对比图可以点击放大，距离来自真实坐标，没有为了展示手动挪动家具。
+
+这是家具布局的前后对比，不是重新设计户型，也不是家具移动过程的动画。近景仅隐藏其他房间、吊灯和面向镜头的墙形成剖视，未改动生成的几何或家具坐标。[测量记录](docs/media/comparison-result.json)保留真实坐标及检查结果。
 
 [家具移动与撤销](docs/media/scenecraft-edit.mp4) · [锁定后换布局](docs/media/scenecraft-layout.mp4)
 

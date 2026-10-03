@@ -19,6 +19,7 @@ Development was recorded in Unity Version Control / Plastic SCM before this GitH
 | CS2 | 2026-10-03 | Bilingual quantity/room constraints, cloud-plan preservation, normalized room geometry, shared-wall ownership and regression tests | [PromptRules](Assets/SceneCraftAI/Scripts/Planning/PromptRules.cs), [RoomGeometry](Assets/SceneCraftAI/Scripts/Domain/RoomGeometry.cs) |
 | CS3 | 2026-10-03 | Bilingual scene controls, saved language preference and real event-driven build workflow | [SceneCraftHud](Assets/SceneCraftAI/Scripts/UI/SceneCraftHud.cs), [UiText](Assets/SceneCraftAI/Scripts/UI/UiText.cs) |
 | Git publication | 2026-10-03 | Public dependency copy, sanitized cloud settings, real player capture tooling, media and technical documentation | [SceneCapture](Assets/SceneCraftAI/Scripts/Runtime/SceneCapture.cs), [PortfolioBuild](Assets/SceneCraftAI/Editor/PortfolioBuild.cs), [validation](docs/VALIDATION.md) |
+| Git presentation refresh | 2026-10-03 | Same-camera room close-ups, measured lock/movement annotations and before/after evidence, without changing layout rules | [Comparison capture](Assets/SceneCraftAI/Scripts/Runtime/SceneCapture.cs), [comparison measurements](docs/media/comparison-result.json) |
 
 The current implementation was developed with AI coding assistance. SceneSmith supplied workflow inspiration; the Unity runtime, deterministic constraints and interactive editing are the project's implementation. This attribution does not claim a legal originality audit or full SceneSmith parity.
 
@@ -28,7 +29,7 @@ The original SCM workspace remains intact. This repository contains a separate f
 
 During the fresh import/build, Unity upgraded three URP settings assets and the Burst AOT settings to the installed package serialization versions. These package-managed changes are retained in the validated publication copy; existing asset GUIDs, scenes, Prefabs and gameplay source remain unchanged.
 
-Capture tools are gated by `-sceneCapture` and only compiled in the Editor or Development Builds. Normal startup retains manual camera controls and the ordinary scene generation flow. Capture runs local generation, checks real editing results and exits; output videos are encoded from the generated PNG frame sequence.
+Capture tools are gated by `-sceneCapture` or `-sceneCompare` and only compiled in the Editor or Development Builds. Normal startup retains manual camera controls and the ordinary scene generation flow. Capture runs local generation, checks real editing results and exits; output videos are encoded from the generated PNG frame sequence. The comparison mode preserves actual before/after snapshots, verifies the locked object and unchanged room/inventory data, and adds native UI measurements without modifying layout rules.
 
 ### Validation and Next Steps
 
@@ -57,6 +58,7 @@ Use ordinary, current Git commits for later changes. Do not describe unimplement
 | CS2 | 2026-10-03 | 中英文数量与房间约束、保留云端规划、统一几何归一化、共享墙所有权与回归 | [提示词约束](Assets/SceneCraftAI/Scripts/Planning/PromptRules.cs)、[房间几何](Assets/SceneCraftAI/Scripts/Domain/RoomGeometry.cs) |
 | CS3 | 2026-10-03 | 双语界面、语言偏好保存、事件驱动真实生成进度 | [HUD](Assets/SceneCraftAI/Scripts/UI/SceneCraftHud.cs)、[界面文案](Assets/SceneCraftAI/Scripts/UI/UiText.cs) |
 | Git 发布 | 2026-10-03 | 独立公开工程副本、移除云标识、播放器录制、展示素材与技术说明 | [录制工具](Assets/SceneCraftAI/Scripts/Runtime/SceneCapture.cs)、[验证](docs/VALIDATION.md) |
+| Git 展示更新 | 2026-10-03 | 同镜头房间近景、真实锁定与位移标注、前后坐标证据，不改摆放规则 | [比较录制](Assets/SceneCraftAI/Scripts/Runtime/SceneCapture.cs)、[测量记录](docs/media/comparison-result.json) |
 
 开发过程中使用了 AI 编程辅助。SceneSmith 提供流程灵感，本项目实现 Unity 运行时、确定性约束和交互编辑；不宣称已经完成法律层面的原创性审计或完整复现 SceneSmith。
 
@@ -66,7 +68,7 @@ Use ordinary, current Git commits for later changes. Do not describe unimplement
 
 首次导入和构建时，Unity 自动将三个 URP 设置资产和 Burst AOT 设置迁移到当前包的序列化版本，发布副本保留这些已验证的包管理变更。原有资产 GUID、场景、Prefab 和业务源码未修改。
 
-录制工具只在编辑器或 Development Build 中编译，并且必须传入 `-sceneCapture` 才会启动。正常运行仍使用原有相机交互和生成流程。录制采用本地生成，核验真实编辑结果，完成后退出，再由 PNG 帧序列编码为视频。
+录制工具只在编辑器或 Development Build 中编译，并且必须传入 `-sceneCapture` 或 `-sceneCompare` 才会启动。正常运行仍使用原有相机交互和生成流程。录制采用本地生成，核验真实编辑结果，完成后退出，再由 PNG 帧序列编码为视频。比较模式保存真实前后快照，检查位置锁定、房间和物件清单一致性，使用原生 UI 标注坐标测量，不改摆放规则。
 
 ### 验证与后续维护
 

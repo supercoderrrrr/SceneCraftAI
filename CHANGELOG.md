@@ -1,5 +1,15 @@
 # 更新日志
 
+## 2026-10-03 · Portfolio comparison refresh / 作品集对比展示
+
+- Replace tiny whole-apartment comparison thumbnails with same-camera living-room and kitchen cutaways
+- Mark the unchanged locked coffee table in green and actual bookshelf/refrigerator movement in orange, with measured distances and rotation
+- Preserve before/after object coordinates and verify unchanged rooms, requested inventory and table position/rotation
+- Refresh the layout GIF, video segment and combined demonstration without changing generation or placement rules
+- 将难以观察的全屋缩略图替换为同镜头近景，使用绿框标记锁定茶几、橙框和箭头标记真实变化，并保留坐标证据
+
+验证：独立播放器构建成功，0 构建错误；比较录制检查通过，无运行时错误/异常；EditMode 112/112、PlayMode 22/22 回归通过。录制工具仍与正常交互隔离，不调用付费 API，不改变原 SCM 工作区；6 项布局审计提醒保持公开
+
 ## 2026-10-03 · 中英文界面与语言偏好
 
 - 在右上角增加 English / 中文选择菜单，首次启动默认英文，选择后保存本机语言偏好
